@@ -1,0 +1,184 @@
+/* These are the imported fonts. */
+@font-face {
+    font-family: FrutigerBlack;
+    src: url('../fonts/Frutiger-Black.otf');
+}
+@font-face {
+    font-family: Interstate-Bold;
+    src: url('../fonts/Interstate-Bold.otf');
+}
+@font-face {
+    font-family: Interstate-Condensed;
+    src: url(../fonts/Interstate-Condensed-Bold.otf);
+}
+body {
+    background-color: black;
+    margin-left: 250px;
+    align-content: center;
+    font-family: Interstate-Bold;
+}
+.container {
+    margin-left: 110px;
+    display: flex;
+   flex-wrap: wrap;
+   object-fit: cover;
+}
+.panel {
+    margin-top: 90px;
+    margin-left: 51px;
+    width: 637px;
+    height: 340px;
+}
+.slideplaceholder {
+    display: flex;
+    color: white;
+    position: absolute;
+    margin-top: 45px;
+    font-size: 36;
+    margin-left: 60px;
+}
+.city {
+    display: flex;
+    font-family: Interstate-Bold;
+    color: black;
+    position: absolute;
+    top: 97.11px;
+    font-size: 24px;
+    margin-left: 58px;
+    width: 621px;
+    text-transform: uppercase;
+}
+.iconc {
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 95px;
+    display: flex;
+}
+.icon {
+    width: 146px;
+    background-color: transparent;
+}
+.cond {
+    position: absolute;
+    margin-top: 256px;
+    margin-left: 50.47px;
+    font-size: 25px;
+    height: 11px;
+    width: 221px;
+    text-align: center;
+}
+.temperature {
+    position: absolute;
+    padding-top: 337px;
+    padding-left: 56.4px;
+    text-align: center;
+    width: 210px;
+    font-family: FrutigerBlack;
+    font-size: 64px;
+}
+.ldl {
+    display: flex;
+    position: absolute;
+    margin-top: -131px;
+}
+.marqueebar {
+ width: 729px;
+}
+.innerldlimg {
+    position: absolute;
+    margin-left: 110px;
+    margin-bottom: 250px;
+}
+.alert {
+    position: absolute;
+    color: black;
+    margin-left: 75px;
+    width: 550px;
+    margin-top: 53px;
+    text-transform: uppercase;
+}
+.twcimg {
+    position: absolute;
+    width: 67px;
+    margin-left: 732px;
+}
+.timer {
+    margin-left: 1024px;
+    margin-top: 54px;
+}
+ .marquee {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    margin-top: 84px;
+}
+.scroll {
+    margin-top: 50px;
+    width: 729px;
+    height: 81px;
+}
+/* Right Section starts here */
+.rightcontainer {
+    position: absolute;
+display: flex;
+    margin-left: 310px;
+    margin-top: 100px;
+}
+.name {
+    position: absolute;
+    display: flex;
+    font-family: Interstate-Bold;
+    margin-top: 13px;
+    margin-left: 9px;
+    width: fit-content;
+    font-size: 22px;
+}
+.value {
+    position: absolute;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 152px;
+    font-family: Interstate-Bold;
+    font-size: 33px;
+}
+.small {
+    font-size: 17px;
+    margin-left: 11px;
+    margin-top: 12px;   
+}
+.radarcontainer {
+    position: absolute;
+    display: none;
+    position: absolute;
+}
+.radarpanel {
+    margin-top: 35px;
+    margin-left: 50px;
+    width: 724px;
+    position: absolute;
+}
+.forecastcontainer {
+    display: none;
+    margin-top: 90px;
+    margin-left: 56px;
+    position: absolute;
+}
+.forecastcontainer img {
+    width: 636px;
+}
+.dayname {
+    position: absolute;
+    font-family: Interstate-Condensed;
+    margin-top: 38px;
+    font-size: 33px;
+    margin-left: 10px;
+}
+.forecast {
+    position: absolute;
+    word-spacing: -4px;
+    margin-left: 8px;
+    width: 454px;
+    margin-top: 74px;
+    line-height: 34px;
+    font-size: 26px;
+}
