@@ -37,13 +37,13 @@
     document.getElementById('citynf2').textContent = `${locationn}`
     document.getElementById("citynamee").textContent = `${locationn}`
    // Extended Forecast
-   document.getElementById('icons').innerHTML = `<img id="icon0" src="/images/icons/${icons}/${daypart[0].iconCode[0]}.${filet}">
-   <img id="icon1" style="margin-left: 151px" src="/images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
-   <img id="icon2" style="margin-left: 246px" src="/images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
-   <img id="icon3" style="margin-left: 336px;" src="/images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">
-   <img id="icon4" style="margin-left: 428px;" src="/images/icons/${icons}/${daypart[0].iconCode[8]}.${filet}">
-   <img id="icon5" style="margin-left: 519px;" src="/images/icons/${icons}/${daypart[0].iconCode[10]}.${filet}">
-   <img id="icon6" style="margin-left: 614px;" src="/images/icons/${icons}/${daypart[0].iconCode[12]}.${filet}">`
+   document.getElementById('icons').innerHTML = `<img id="icon0" src="./images/icons/${icons}/${daypart[0].iconCode[0]}.${filet}">
+   <img id="icon1" style="margin-left: 151px" src="./images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
+   <img id="icon2" style="margin-left: 246px" src="./images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
+   <img id="icon3" style="margin-left: 336px;" src="./images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">
+   <img id="icon4" style="margin-left: 428px;" src="./images/icons/${icons}/${daypart[0].iconCode[8]}.${filet}">
+   <img id="icon5" style="margin-left: 519px;" src="./images/icons/${icons}/${daypart[0].iconCode[10]}.${filet}">
+   <img id="icon6" style="margin-left: 614px;" src="./images/icons/${icons}/${daypart[0].iconCode[12]}.${filet}">`
 
    // Scripts are kinda messy here.
    document.getElementById('conditions').innerHTML = `<div class="condition" id="weather00">${daypart[0].wxPhraseLong[0]}</div>
@@ -76,21 +76,21 @@ if (daypart[0].wxPhraseLong[0] == null) {
  margin-left: 567px;
  ">${daypart[0].wxPhraseLong[12]}</div>`;
 
- document.getElementById('icons').innerHTML = `<img id="icon0" src="/images/icons/${icons}/${daypart[0].iconCode[1]}.${filet}">
- <img id="icon1" style="margin-left: 151px" src="/images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
- <img id="icon2" style="margin-left: 246px" src="/images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
- <img id="icon3" style="margin-left: 336px;" src="/images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">
- <img id="icon4" style="margin-left: 428px;" src="/images/icons/${icons}/${daypart[0].iconCode[8]}.${filet}">
- <img id="icon5" style="margin-left: 519px;" src="/images/icons/${icons}/${daypart[0].iconCode[10]}.${filet}">
- <img id="icon6" style="margin-left: 614px;" src="/images/icons/${icons}/${daypart[0].iconCode[12]}.${filet}">`
+ document.getElementById('icons').innerHTML = `<img id="icon0" src="./images/icons/${icons}/${daypart[0].iconCode[1]}.${filet}">
+ <img id="icon1" style="margin-left: 151px" src="./images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
+ <img id="icon2" style="margin-left: 246px" src="./images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
+ <img id="icon3" style="margin-left: 336px;" src="./images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">
+ <img id="icon4" style="margin-left: 428px;" src="./images/icons/${icons}/${daypart[0].iconCode[8]}.${filet}">
+ <img id="icon5" style="margin-left: 519px;" src="./images/icons/${icons}/${daypart[0].iconCode[10]}.${filet}">
+ <img id="icon6" style="margin-left: 614px;" src="./images/icons/${icons}/${daypart[0].iconCode[12]}.${filet}">`
 } else if (daypart[0].wxPhraseLong[0] !== null) {
-  document.getElementById('icons').innerHTML = `<img id="icon0" src="/images/icons/${icons}/${daypart[0].iconCode[0]}.${filet}">
-  <img id="icon1" style="margin-left: 151px" src="/images/icons/${icons}/${daypart[0].iconCode[1]}.${filet}">
-  <img id="icon2" style="margin-left: 246px" src="/images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
-  <img id="icon3" style="margin-left: 336px;" src="/images/icons/${icons}/${daypart[0].iconCode[3]}.${filet}">
-  <img id="icon4" style="margin-left: 428px;" src="/images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
-  <img id="icon5" style="margin-left: 519px;" src="/images/icons/${icons}/${daypart[0].iconCode[5]}.${filet}">
-  <img id="icon6" style="margin-left: 614px;" src="/images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">`
+  document.getElementById('icons').innerHTML = `<img id="icon0" src="./images/icons/${icons}/${daypart[0].iconCode[0]}.${filet}">
+  <img id="icon1" style="margin-left: 151px" src="./images/icons/${icons}/${daypart[0].iconCode[1]}.${filet}">
+  <img id="icon2" style="margin-left: 246px" src="./images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
+  <img id="icon3" style="margin-left: 336px;" src="./images/icons/${icons}/${daypart[0].iconCode[3]}.${filet}">
+  <img id="icon4" style="margin-left: 428px;" src="./images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
+  <img id="icon5" style="margin-left: 519px;" src="./images/icons/${icons}/${daypart[0].iconCode[5]}.${filet}">
+  <img id="icon6" style="margin-left: 614px;" src="./images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">`
   document.getElementById('conditions').innerHTML = `<div class="condition" id="weather00">${daypart[0].wxPhraseLong[0]}</div>
   <div class="condition" id="weather01" style="margin-left: 103px;">${daypart[0].wxPhraseLong[1]}</div>
   <div class="condition" id="weather02" style="margin-left: 201px;">${daypart[0].wxPhraseLong[2]}</div>
