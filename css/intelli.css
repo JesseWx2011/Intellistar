@@ -9,7 +9,11 @@
 }
 @font-face {
     font-family: Interstate-Condensed;
-    src: url(../fonts/Interstate-Condensed-Bold.otf);
+    src: url('../fonts/Interstate-Condensed-Bold.otf');
+}
+@font-face {
+    font-family: Interstate-Light;
+    src: url('../fonts/Interstate-Light.otf');
 }
 body {
     background-color: black;
@@ -181,4 +185,70 @@ display: flex;
     margin-top: 74px;
     line-height: 34px;
     font-size: 26px;
+}
+.extendedcontainer {
+    display: none;
+    position: absolute;
+}
+.extendedpanel {
+    width: 114%;
+    margin-top: 90px;
+    margin-left: 52px;
+}
+.citynames {
+    position: absolute;
+    display: flex;
+    font-family: Interstate-Condensed;
+    font-weight: 300;
+}
+.ename {
+    position: absolute;
+    display: flex;
+    margin-top: 131px;
+    margin-left: 79px;
+    font-size: 24px;
+}
+.icons {
+    position: absolute;
+}
+.icons img {
+    position: absolute;
+    width: 84px;
+    margin-top: 161px;
+    margin-left: 59px;
+}
+.conditionlist {
+    position: absolute;
+    line-height: 22px;
+    margin-top: 248px;
+    margin-left: 57px;
+    width: 89px;
+    text-align: center;
+}
+.condition {
+    position: absolute;
+    text-align: center;
+    width: 73px;
+}
+.temperaturelist {
+    font-family: FrutigerBlack;
+    position: absolute;
+    font-size: 37px;
+    margin-top: 319px;
+    margin-left: 80px;
+    text-align: center;
+}
+.hightemps {
+    position: absolute;
+    text-align: center;
+}
+.hightemp {
+    position: absolute;
+}
+.lowtemps {
+    position: absolute;
+    margin-top: 43px;
+}
+.lowtemp {
+    position: absolute;
 }
