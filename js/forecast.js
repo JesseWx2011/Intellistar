@@ -85,19 +85,19 @@ if (daypart[0].wxPhraseLong[0] == null) {
  <img id="icon6" style="margin-left: 614px;" src="./images/icons/${icons}/${daypart[0].iconCode[12]}.${filet}">`
 } else if (daypart[0].wxPhraseLong[0] !== null) {
   document.getElementById('icons').innerHTML = `<img id="icon0" src="./images/icons/${icons}/${daypart[0].iconCode[0]}.${filet}">
-  <img id="icon1" style="margin-left: 151px" src="./images/icons/${icons}/${daypart[0].iconCode[1]}.${filet}">
-  <img id="icon2" style="margin-left: 246px" src="./images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
-  <img id="icon3" style="margin-left: 336px;" src="./images/icons/${icons}/${daypart[0].iconCode[3]}.${filet}">
-  <img id="icon4" style="margin-left: 428px;" src="./images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
-  <img id="icon5" style="margin-left: 519px;" src="./images/icons/${icons}/${daypart[0].iconCode[5]}.${filet}">
-  <img id="icon6" style="margin-left: 614px;" src="./images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">`
+  <img id="icon1" style="margin-left: 151px" src="./images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
+  <img id="icon2" style="margin-left: 246px" src="./images/icons/${icons}/${daypart[0].iconCode[4]}.${filet}">
+  <img id="icon3" style="margin-left: 336px;" src="./images/icons/${icons}/${daypart[0].iconCode[6]}.${filet}">
+  <img id="icon4" style="margin-left: 428px;" src="./images/icons/${icons}/${daypart[0].iconCode[8]}.${filet}">
+  <img id="icon5" style="margin-left: 519px;" src="./images/icons/${icons}/${daypart[0].iconCode[10]}.${filet}">
+  <img id="icon6" style="margin-left: 614px;" src="./images/icons/${icons}/${daypart[0].iconCode[12]}.${filet}">`
   document.getElementById('conditions').innerHTML = `<div class="condition" id="weather00">${daypart[0].wxPhraseLong[0]}</div>
-  <div class="condition" id="weather01" style="margin-left: 103px;">${daypart[0].wxPhraseLong[1]}</div>
-  <div class="condition" id="weather02" style="margin-left: 201px;">${daypart[0].wxPhraseLong[2]}</div>
-  <div class="condition" id="weather03" style="margin-left: 287px;">${daypart[0].wxPhraseLong[3]}</div>
-  <div class="condition" id="weather04" style="margin-left: 386px;">${daypart[0].wxPhraseLong[4]}</div>
-  <div class="condition" id="weather05" style="margin-left: 469px;">${daypart[0].wxPhraseLong[5]}</div>
-  <div class="condition" id="weather06" style="margin-left: 567px;">${daypart[0].wxPhraseLong[6]}</div>`
+  <div class="condition" id="weather01" style="margin-left: 103px;">${daypart[0].wxPhraseLong[2]}</div>
+  <div class="condition" id="weather02" style="margin-left: 201px;">${daypart[0].wxPhraseLong[4]}</div>
+  <div class="condition" id="weather03" style="margin-left: 287px;">${daypart[0].wxPhraseLong[6]}</div>
+  <div class="condition" id="weather04" style="margin-left: 386px;">${daypart[0].wxPhraseLong[8]}</div>
+  <div class="condition" id="weather05" style="margin-left: 469px;">${daypart[0].wxPhraseLong[10]}</div>
+  <div class="condition" id="weather06" style="margin-left: 567px;">${daypart[0].wxPhraseLong[12]}</div>`
 }
  document.getElementById('hightemplist').innerHTML = `                    <div class="hightemp" id="hi0">${calendarDayTemperatureMax[0]}</div>
  <div class="hightemp" id="hi1" style="margin-left: 93px;">${calendarDayTemperatureMax[1]}</div>
