@@ -8,12 +8,15 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Scripts -->
+<div id="scriptsec">
 <script type="text/javascript" src="./js/config.js"></script>
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/alerts.js"></script>
 <script type="text/javascript" src="./js/forecast.js"></script>
 <script type="text/javascript" src="./js/radar.js"></script>
-<script type="text/javascript" src="./js/extendedforecast.js"></script>
+<script type="text/javascript" src="./js/returnvariables.js"></script>
+<script src="text/javascript" src="./js/disablescript.js"></script>
+</div>
 <!-- CSS -->
 <link rel="stylesheet" href="./css/intelli.css">
 
@@ -143,64 +146,32 @@
             </div>
             <div id="conditions" class="conditionlist">
                 <div class="condition" id="weather00">Partly Cloudy</div>
-                <div class="condition" id="weather01" style="
-    margin-left: 99px;
-">PM Showers</div>
-                <div class="condition" id="weather02" style="
-    margin-left: 192px;
-">Partly Cloudy</div>
-                <div class="condition" id="weather03" style="
-    margin-left: 283px;
-">Few Showers</div>
-                <div class="condition" id="weather04" style="
-    margin-left: 375px;
-">Cloudy</div>
-                <div class="condition" id="weather05" style="
-    margin-left: 465px;
-">Showers</div>
-                <div class="condition" id="weather06" style="
-    margin-left: 559px;
-">Partly Cloudy</div>
+                <div class="condition" id="weather01" style="margin-left: 67px;">PM Showers</div>
+                <div class="condition" id="weather02" style="margin-left: 159px;">Partly Cloudy</div>
+                <div class="condition" id="weather03" style="margin-left: 250px;">Few Showers</div>
+                <div class="condition" id="weather04" style="margin-left: 338px;">Cloudy</div>
+                <div class="condition" id="weather05" style="margin-left: 417px;">Showers</div>
+                <div class="condition" id="weather06" style="margin-left: 521px;">Partly Cloudy</div>
 
             </div>
             <div class="temperaturelist" id="temps">
                 <div class="hightemps" id="hightemplist">
                     <div class="hightemp" id="hi0">44</div>
                     <div class="hightemp" id="hi1" style="margin-left: 93px;">47</div>
-                    <div class="hightemp" id="hi2" style="
-    margin-left: 181px;
-">47</div>
-                    <div class="hightemp" id="hi3" style="
-    margin-left: 275px;
-">44</div>
-                    <div class="hightemp" id="hi4" style="
-    margin-left: 367px;
-">50</div>
-                    <div class="hightemp" id="hi5" style="
-    margin-left: 457px;
-">44</div>
-                    <div class="hightemp" id="hi6" style="
-    margin-left: 546px;
-">45</div>
+                    <div class="hightemp" id="hi2" style="margin-left: 181px;">47</div>
+                    <div class="hightemp" id="hi3" style="margin-left: 275px;">44</div>
+                    <div class="hightemp" id="hi4" style="margin-left: 367px;">50</div>
+                    <div class="hightemp" id="hi5" style="margin-left: 457px;">44</div>
+                    <div class="hightemp" id="hi6" style="margin-left: 546px;">45</div>
                 </div>
-                <div class="lowtemps">
+                <div class="lowtemps" id="lowtemps">
                     <div class="lowtemp" id="lo0">32</div>
                     <div class="lowtemp" id="lo1" style="margin-left: 93px;">31</div>
-                    <div class="lowtemp" id="lo2" style="
-    margin-left: 181px;
-">32</div>
-                    <div class="lowtemp" id="lo3" style="
-    margin-left: 275px;
-">32</div>
-                    <div class="lowtemp" id="lo4" style="
-    margin-left: 367px;
-">39</div>
-                    <div class="lowtemp" id="lo5" style="
-    margin-left: 457px;
-">36</div>
-                    <div class="lowtemp" id="lo6" style="
-    margin-left: 546px;
-">38</div>
+                    <div class="lowtemp" id="lo2" style="margin-left: 181px;">32</div>
+                    <div class="lowtemp" id="lo3" style="margin-left: 275px;">32</div>
+                    <div class="lowtemp" id="lo4" style="margin-left: 367px;">39</div>
+                    <div class="lowtemp" id="lo5" style="margin-left: 457px;">36</div>
+                    <div class="lowtemp" id="lo6" style="margin-left: 546px;">38</div>
                 </div>
             </div>
             <img class="extendedpanel" src="./images/panels/extended.png">
@@ -224,6 +195,7 @@
             </div>
         </div>
     </div>
+
 </body>
 <audio style="width: 0px;" controls autoplay>
     <source id="music" src="./music//Winter/Once and Again - Snuffy.wav" type="audio/wav">
@@ -271,7 +243,7 @@
         time.innerHTML = `${hour}:${minute}`
         if (alertac !== "null") {
             document.getElementById('time').style.color = "black"
-        } if (alertac == "null") {
+        } else if (alertac = "null") {
             document.getElementById('time').style.color = "white"
         } else {
             document.getElementById('time').style.color = "black"
@@ -297,7 +269,7 @@
     const weekday = weekdays[d.getDay() + 1]
     console.log(weekday);
     console.log(dayofweek);
-    // Section for day names
+    // Section for day names for the extended forecast.
     document.getElementById('ename0').innerHTML = `${weekdays[d.getDay() + 1]}`;
     document.getElementById('ename1').innerHTML = `${weekdays[d.getDay() + 2]}`;
     document.getElementById('ename2').innerHTML = `${weekdays[d.getDay() + 3]}`;
@@ -305,5 +277,4 @@
     document.getElementById('ename4').innerHTML = `${weekdays[d.getDay() + 5]}`;
     document.getElementById('ename5').innerHTML = `${weekdays[d.getDay() + 6]}`;
     document.getElementById('ename6').innerHTML = `${weekdays[d.getDay() + 7]}`;
-
 </script>
