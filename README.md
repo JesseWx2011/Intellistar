@@ -10,7 +10,8 @@ Inspired by buffbears/weatherscan. This project was made by me.
   
   <h3 align="center">Screenshots :)</h3>
   <div align="center">
-      <img src="./screenshots/1.png">
+   <img src="./screenshots/0.png">
+    <img src="./screenshots/1.png">
    <img src="./screenshots/2.png">
    <img src="./screenshots/3.png">
    <img src="./screenshots/4.png">
