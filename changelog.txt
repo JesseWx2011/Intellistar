@@ -1,0 +1,7 @@
+# CHANGELOG
+Version 1.1.5. Inital Relase: February 24th 2024
+Fixed Mismatched Icon
+Adjusted Weather for Extended Forecast (using word-wrap)
+Ideas:
+Fullscreen mode
+Almanac
