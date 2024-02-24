@@ -105,6 +105,7 @@ body {
     position: absolute;
     width: 67px;
     margin-left: 732px;
+    margin-top: 6px;
 }
 .timer {
     margin-left: 1024px;
@@ -221,14 +222,12 @@ display: flex;
     position: absolute;
     line-height: 22px;
     margin-top: 248px;
-    margin-left: 57px;
-    width: 89px;
-    text-align: center;
 }
 .condition {
     position: absolute;
     text-align: center;
     width: 73px;
+    word-wrap: break-word;
 }
 .temperaturelist {
     font-family: FrutigerBlack;
