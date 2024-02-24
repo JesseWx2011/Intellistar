@@ -14,5 +14,7 @@ Inspired by buffbears/weatherscan. This project was made by me.
    <img src="./screenshots/1.png">
    <img src="./screenshots/2.png">
    <img src="./screenshots/3.png">
+   <img src="./screenshots/4.png">
+   <img src="./screenshots/5.png">
    <p>Note: Screenshots taken as of Version 1.0</p>
   </div>
