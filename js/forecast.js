@@ -5,37 +5,36 @@
   const data = await response.json();
   const {calendarDayTemperatureMax, calendarDayTemperatureMin, daypart, narrative} = data;
     console.log(data);
-
-  if (daypart[0].narrative[0] !== null) {
-    var forecast = `${daypart[0].narrative[0]}`;
-    var dayname =  `${daypart[0].daypartName[0]}`;
-    var forecast0 = `${daypart[0].narrative[1]}`;
-    var dayname0 =  `${daypart[0].daypartName[1]}`;
-    var dayname1 = `${daypart[0].daypartName[2]}`;
-     var forecast1 = `${daypart[0].narrative[2]}`
-  } else if (daypart[0].narrative[0] == null) {
-    var forecast = `${daypart[0].narrative[1]}`;
-    var dayname =  `${daypart[0].daypartName[1]}`;
-    var forecast0 = `${daypart[0].narrative[2]}`;
-    var dayname0 =  `${daypart[0].daypartName[2]}`;
-    var dayname1 = `${daypart[0].daypartName[3]}`;
-    var forecast1 = `${daypart[0].narrative[3]}`
-  } 
-    // Local Forecast Slide
-    // Forecast for Day 1
-    document.getElementById('daypartn1').innerHTML  = `${dayname}`;
-    document.getElementById('forecast1').innerHTML = `${forecast}`;
-    // Forecast For Day 2
-    document.getElementById('daypartn2').innerHTML = `${dayname0}`
-    document.getElementById('forecast2').innerHTML = `${forecast0}`
-    // Forecast for Day 3
-    document.getElementById('daypartn3').innerHTML = `${dayname1}`
-    document.getElementById('forecast3').innerHTML = `${forecast1}`
-    // City Stuff
-    document.getElementById('citynf').textContent = `${locationn}`
-    document.getElementById('citynf1').textContent = `${locationn}`;
-    document.getElementById('citynf2').textContent = `${locationn}`
-    document.getElementById("citynamee").textContent = `${locationn}`
+    if (daypart[0].narrative[0] !== null) {
+      var forecast = `${daypart[0].narrative[0]}`;
+      var dayname =  `${daypart[0].daypartName[0]}`;
+      var forecast0 = `${daypart[0].narrative[1]}`;
+      var dayname0 =  `${daypart[0].daypartName[1]}`;
+      var dayname1 = `${daypart[0].daypartName[2]}`;
+       var forecast1 = `${daypart[0].narrative[2]}`
+    } else if (daypart[0].narrative[0] == null) {
+      var forecast = `${daypart[0].narrative[1]}`;
+      var dayname =  `${daypart[0].daypartName[1]}`;
+      var forecast0 = `${daypart[0].narrative[2]}`;
+      var dayname0 =  `${daypart[0].daypartName[2]}`;
+      var dayname1 = `${daypart[0].daypartName[3]}`;
+      var forecast1 = `${daypart[0].narrative[3]}`
+    } 
+      // Local Forecast Slide
+      // Forecast for Day 1
+      document.getElementById('daypartn1').innerHTML  = `${dayname}`;
+      document.getElementById('forecast1').innerHTML = `${forecast}`;
+      // Forecast For Day 2
+      document.getElementById('daypartn2').innerHTML = `${dayname0}`
+      document.getElementById('forecast2').innerHTML = `${forecast0}`
+      // Forecast for Day 3
+      document.getElementById('daypartn3').innerHTML = `${dayname1}`
+      document.getElementById('forecast3').innerHTML = `${forecast1}`
+      // City Stuff
+      document.getElementById('citynf').textContent = `${locationn}`
+      document.getElementById('citynf1').textContent = `${locationn}`;
+      document.getElementById('citynf2').textContent = `${locationn}`
+      document.getElementById("citynamee").textContent = `${locationn}`
    // Extended Forecast
    document.getElementById('icons').innerHTML = `<img id="icon0" src="./images/icons/${icons}/${daypart[0].iconCode[0]}.${filet}">
    <img id="icon1" style="margin-left: 151px" src="./images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
