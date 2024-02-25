@@ -1,4 +1,4 @@
- ReturnWeather()
+ReturnWeather()
  const api_url = `https://api.weather.com/v1/geocode/${lat}/${lon}/observations.json?language=${lang}-${country}&units=${units}&apiKey=${api_key}`
  console.log(api_url)
  async function ReturnWeather() {
@@ -6,7 +6,6 @@
   const data = await response.json();
   const {observation} = data;
 console.log(data);
-
 
   document.getElementById('cityn').innerHTML = `${locationn}`;
   document.getElementById('condition').innerHTML = `${observation.wx_phrase}`;
@@ -28,13 +27,14 @@ document.getElementById('icon').innerHTML = `<img class="icon" src="./images/ico
   var pressuret = `${observation.pressure_desc}`
   if (pressuret = `Falling`) {
     var pressuredep = `↓`;
-  } if (pressuret = `Rising`) {
+  } else if (pressuret = `Rising`) {
     var pressuredep = `↑`
-  } if (pressuret = `Steady`) {
+  } else if (pressuret = `Steady`) {
     var pressuredep = `S`
-  } 
+  } else {
+    var pressuredep = `↑`
+  }
   document.getElementById('pressure').innerHTML = `${observation.pressure} <div class="small">INCHES</div>${pressuredep}</div>`
-  console.clear();	
 
  }
 ReturnWeather()
