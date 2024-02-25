@@ -3,18 +3,18 @@ var api_key = `e1f10a1e78da46f5b10a1e78da96f525`;
 // Input your mapbox key.
  var map_key = `pk.eyJ1IjoiaGFzdHl0dWJlIiwiYSI6ImNsa2hkZTh6bzAwazQzZHFyNmF5aTRsZGwifQ.5QJvYIHo0odZ5jCFApV7yw`
 
-var lat = "40.1234153"; // Your latitude.
-var lon = "-75.3349552" // Your longitude 
-var icons = "2010"; // Types are 2007, 2010 (XL Coming Soon.)
+ var lat = "27.8006196"
+ var lon = "-97.3966183"
+ var icons = "2007"; // Types are 2007, 2010 (XL Coming Soon.)
 // Very Important:
 // If your icons is 2007, change to gif.
 // If your icons is 2010, change to png.
 // No period before the file type. Otherwise it gives it out as iconno..png/gif
-var filet = `png`
-var locationn =  "Norristown" // The Name of your location.
+var filet = `gif` // gif or png. No period included
+var locationn =  "Corpus Christi" // The Name of your location.
 var units = "e" // The Units displayed. e is imperial, m is metric. Default is e.
 // This is the message that appears on the marquee.
-var marquee_message = `Want to live your best self in your later years? Tel Hai Retirement Community is the place for you! Our life-plan facility offers everything from independent living to full-service care. Learn more today at: telhai.org`
+var marquee_message = `Some random scroll bar on the simulator :)`
 // Music
  var music = `Once and Again - Snuffy` // Your music. You need the exact name of the music file though. Example: High Tides of Maui - Ficara.
  var audiotype = `.wav` // Your audio format. Examples: .wav, .mp3, .mpeg, etc.
