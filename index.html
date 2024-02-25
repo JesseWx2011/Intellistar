@@ -8,20 +8,13 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Scripts -->
-<div id="scriptsec">
 <script type="text/javascript" src="./js/config.js"></script>
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/alerts.js"></script>
 <script type="text/javascript" src="./js/forecast.js"></script>
 <script type="text/javascript" src="./js/radar.js"></script>
-<script type="text/javascript" src="./js/returnvariables.js"></script>
-<script src="text/javascript" src="./js/disablescript.js"></script>
-</div>
 <!-- CSS -->
 <link rel="stylesheet" href="./css/intelli.css">
-
-</html>
-
 <body>
     <!-- The Current Conditions Section.  -->
     <div class="container">
@@ -83,6 +76,43 @@
             <img class="radarpanel" src="./images/panels/radarpanel.png"></img>
             <div class="slideplaceholder" style="width: 660px; margin-top: 42px;">Regional Radar</div>
         </div>
+        <div class="almanac" id="almanacslide">
+            <div class="almanacpanel">
+                <div class="slideplaceholder" style="margin-top: -52px; margin-left: 12px; font-size: 38px;">Almanac</div>
+                <div class="sunrisesunsettimes">
+                    <div class="dayofweek001" id="almanacday0">TUESDAY</div>
+                    <div class="dayofweek002" id="almanacday1">WEDNESDAY</div>
+                    <div class="sunrisen">SUNRISE</div>
+                    <div class="sunsetn">SUNSET</div>
+                    <div id="sunrise0" class="sunrisep">8:04 am</div>
+                    <div id="sunset0" class="sunsetp">5:25 pm</div>
+                    <div id="sunrise1" style="margin-left: 333px;" class="sunrisep">8:04 am</div>
+                    <div id="sunset1" style="margin-left: 333px;" class="sunsetp">5:26 pm</div>
+                </div>
+                <div class="lowerplaceholder">  
+                    <div class="stationname" id="station"></div>
+                    <div class="almanacdays" id="almanacdate">December 25</div>
+                    <!-- Left Side Stuff -->
+                    <div class="yesterdaysactual">Yesterday's Actual</div>
+                    <div class="todaysaverage">Today's Average</div>
+                    <div class="todaysrecords">Today's Records</div>
+                    <div class="almanachi">HIGH</div>
+                    <div class="almanaclo">LOW</div>
+                    <!-- End of Left Side Stuff -->
+                    <!-- Values -->
+                    <div class="yesterdayhigh" id="yesthi">37</div>
+                    <div class="yesterdaylow" id="yestlo">24</div>
+                    <div class="averagehigh" id="avhi">36</div>
+                    <div class="averagelow" id="avlo">21</div>
+                    <div class="recordhiyear" id="maxyear">1893</div>
+                    <div class="recordmax" id="rmax">64</div>
+              <div class="recordminy" id="minyear">1883</div>
+               <div class="recordmin" id="rmin">-13</div>
+                </div>
+                <img style="width: 645px; height: 349px" src="./images/panels/almanac.png">
+            </div>
+            <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslidee()">Next Slide.</button>
+        </div>
         <div class="forecastcontainer" id="forecastpanel">
             <div class="forecastpanel">
                 <div class="slideplaceholder" style="margin-top: -52px; margin-left: 8px; font-size: 38px;">Local
@@ -93,8 +123,7 @@
                 <div class="forecast" id="forecast1">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide1()">Next
-                    Slide.</button>
+                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide1()">Next Slide.</button>
             </div>
         </div>
         <div class="forecastcontainer" id="forecastpanel1">
@@ -195,11 +224,12 @@
             </div>
         </div>
     </div>
-
 </body>
+</html>
 <audio style="width: 0px;" controls autoplay>
     <source id="music" src="./music//Winter/Once and Again - Snuffy.wav" type="audio/wav">
 </audio>
+<!-- Stuff I could not put into a JS file. -->
 <script>
     function myFunction() {
         document.getElementById('nextslide').style.display = "none"
@@ -208,6 +238,10 @@
     };
     function forecastslide() {
         document.getElementById('radarslide').style.display = "none"
+        document.getElementById('almanacslide').style.display = "block"
+    }
+    function forecastslidee() {
+        document.getElementById('almanacslide').style.display = "none"
         document.getElementById('forecastpanel').style.display = "block"
     }
     function forecastslide1() {
@@ -267,8 +301,23 @@
     const weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
     const dayofweek = d.getDay() + 1;
     const weekday = weekdays[d.getDay() + 1]
+    // Function for getting almanac day
+    var month = `${d.getMonth() + 1}`
+    var day = `${d.getDate()}`
+    var year = `${d.getFullYear()}`
+    // Function for Almanac Weekdays
+    const weekdaysfull = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
+    var almanacwkday01 = weekdaysfull[d.getDay()] 
+    var almanacwkday02 = weekdaysfull[d.getDay() + 1] 
+    console.log(month, day)
     console.log(weekday);
     console.log(dayofweek);
+    // Function for Alamanac Day
+    const months = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
+    var alamacday = d.getDate() + 1
+    var almanacm = months[d.getMonth()]
+    console.log(almanacm)
+    document.getElementById("almanacdate").innerHTML = `${months[d.getMonth()]} ${d.getDate()}`
     // Section for day names for the extended forecast.
     document.getElementById('ename0').innerHTML = `${weekdays[d.getDay() + 1]}`;
     document.getElementById('ename1').innerHTML = `${weekdays[d.getDay() + 2]}`;
@@ -277,4 +326,47 @@
     document.getElementById('ename4').innerHTML = `${weekdays[d.getDay() + 5]}`;
     document.getElementById('ename5').innerHTML = `${weekdays[d.getDay() + 6]}`;
     document.getElementById('ename6').innerHTML = `${weekdays[d.getDay() + 7]}`;
+</script>   
+<script>
+    getAlmanac();
+const almanacurl = `https://api.weather.com/v3/wx/almanac/daily/5day?geocode=${lat},${lon}&format=json&units=${units}&startDay=${day}&startMonth=${month}&apiKey=e1f10a1e78da46f5b10a1e78da96f525`
+async function getAlmanac() {  
+ const response = await fetch(almanacurl)
+ const data = await response.json();
+ const {almanacRecordYearMin, almanacRecordYearMax, stationName, temperatureRecordMin, temperatureAverageMax, temperatureAverageMin, temperatureRecordMax} = data;
+ console.log(data)
+ // Almanac Weekdays
+document.getElementById('almanacday0').innerHTML = `${almanacwkday01}`
+document.getElementById("almanacday1").innerHTML = `${almanacwkday02}`
+ // Yesterday's Temps
+ document.getElementById('yesthi').innerHTML = `--`
+ document.getElementById('yestlo').innerHTML = `--`
+ // Today's Average
+  document.getElementById('avhi').innerHTML = `${temperatureAverageMax[0]}`
+  document.getElementById('avlo').innerHTML = `${temperatureAverageMin[0]}`
+ // Records
+ document.getElementById('rmin').innerHTML = `${temperatureRecordMin[0]}`
+ document.getElementById("rmax").innerHTML = `${temperatureRecordMax[0]}`
+ // Record Years
+ document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
+ document.getElementById("minyear").innerHTML = `${almanacRecordYearMin[0]}`;
+ document.getElementById("station").innerHTML = `${stationName[0]}`
+}
+getAlmanac();
 </script>
+<script>
+    sunrisesunset()
+    var day1 = d.getDay() + 31
+    const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-${day1}`;
+    async function sunrisesunset() {
+        const response = await fetch(solarurl)
+        const data = await response.json()
+        const {results} = data;
+        console.log(data)  
+        document.getElementById("sunrise0").innerHTML = `${results[0].sunrise}`
+        document.getElementById("sunset0").innerHTML = `${results[0].sunset}`
+        document.getElementById("sunrise1").innerHTML = `${results[1].sunrise}`
+        document.getElementById("sunset1").innerHTML = `${results[1].sunset}`
+    }
+    sunrisesunset();
+    </script>
