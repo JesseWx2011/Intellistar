@@ -3,36 +3,43 @@
     font-family: FrutigerBlack;
     src: url('../fonts/Frutiger-Black.otf');
 }
+
 @font-face {
     font-family: Interstate-Bold;
     src: url('../fonts/Interstate-Bold.otf');
 }
+
 @font-face {
     font-family: Interstate-Condensed;
     src: url('../fonts/Interstate-Condensed-Bold.otf');
 }
+
 @font-face {
     font-family: Interstate-Light;
     src: url('../fonts/Interstate-Light.otf');
 }
+
 body {
     background-color: black;
     margin-left: 250px;
     align-content: center;
     font-family: Interstate-Bold;
 }
+
 .container {
     margin-left: 110px;
     display: flex;
-   flex-wrap: wrap;
-   object-fit: cover;
+    flex-wrap: wrap;
+    object-fit: cover;
 }
+
 .panel {
     margin-top: 90px;
     margin-left: 51px;
     width: 637px;
     height: 340px;
 }
+
 .slideplaceholder {
     display: flex;
     color: white;
@@ -41,6 +48,7 @@ body {
     font-size: 36;
     margin-left: 60px;
 }
+
 .city {
     display: flex;
     font-family: Interstate-Bold;
@@ -52,16 +60,19 @@ body {
     width: 621px;
     text-transform: uppercase;
 }
+
 .iconc {
     position: absolute;
     margin-top: 105px;
     margin-left: 95px;
     display: flex;
 }
+
 .icon {
     width: 146px;
     background-color: transparent;
 }
+
 .cond {
     position: absolute;
     margin-top: 256px;
@@ -71,6 +82,7 @@ body {
     width: 221px;
     text-align: center;
 }
+
 .temperature {
     position: absolute;
     padding-top: 337px;
@@ -80,19 +92,23 @@ body {
     font-family: FrutigerBlack;
     font-size: 64px;
 }
+
 .ldl {
     display: flex;
     position: absolute;
     margin-top: -131px;
 }
+
 .marqueebar {
- width: 729px;
+    width: 729px;
 }
+
 .innerldlimg {
     position: absolute;
     margin-left: 110px;
     margin-bottom: 250px;
 }
+
 .alert {
     position: absolute;
     color: black;
@@ -101,34 +117,40 @@ body {
     margin-top: 53px;
     text-transform: uppercase;
 }
+
 .twcimg {
     position: absolute;
     width: 67px;
     margin-left: 732px;
     margin-top: 6px;
 }
+
 .timer {
     margin-left: 1024px;
     margin-top: 54px;
 }
- .marquee {
+
+.marquee {
     position: absolute;
     color: white;
     font-size: 24px;
     margin-top: 84px;
 }
+
 .scroll {
     margin-top: 50px;
     width: 729px;
     height: 81px;
 }
+
 /* Right Section starts here */
 .rightcontainer {
     position: absolute;
-display: flex;
+    display: flex;
     margin-left: 310px;
     margin-top: 100px;
 }
+
 .name {
     position: absolute;
     display: flex;
@@ -138,6 +160,7 @@ display: flex;
     width: fit-content;
     font-size: 22px;
 }
+
 .value {
     position: absolute;
     display: flex;
@@ -146,31 +169,37 @@ display: flex;
     font-family: Interstate-Bold;
     font-size: 33px;
 }
+
 .small {
     font-size: 17px;
     margin-left: 11px;
-    margin-top: 12px;   
+    margin-top: 12px;
 }
+
 .radarcontainer {
     position: absolute;
     display: none;
     position: absolute;
 }
+
 .radarpanel {
     margin-top: 35px;
     margin-left: 50px;
     width: 724px;
     position: absolute;
 }
+
 .forecastcontainer {
     display: none;
     margin-top: 90px;
     margin-left: 56px;
     position: absolute;
 }
+
 .forecastcontainer img {
     width: 636px;
 }
+
 .dayname {
     position: absolute;
     font-family: Interstate-Condensed;
@@ -178,6 +207,7 @@ display: flex;
     font-size: 33px;
     margin-left: 10px;
 }
+
 .forecast {
     position: absolute;
     word-spacing: -4px;
@@ -187,21 +217,25 @@ display: flex;
     line-height: 34px;
     font-size: 26px;
 }
+
 .extendedcontainer {
     display: none;
     position: absolute;
 }
+
 .extendedpanel {
     width: 114%;
     margin-top: 90px;
     margin-left: 52px;
 }
+
 .citynames {
     position: absolute;
     display: flex;
     font-family: Interstate-Condensed;
     font-weight: 300;
 }
+
 .ename {
     position: absolute;
     display: flex;
@@ -209,45 +243,218 @@ display: flex;
     margin-left: 79px;
     font-size: 24px;
 }
+
 .icons {
     position: absolute;
 }
+
 .icons img {
     position: absolute;
     width: 84px;
     margin-top: 161px;
     margin-left: 59px;
 }
+
 .conditionlist {
     position: absolute;
     line-height: 22px;
     margin-top: 248px;
 }
+
 .condition {
     position: absolute;
     text-align: center;
     width: 73px;
     word-wrap: break-word;
 }
+
 .temperaturelist {
     font-family: FrutigerBlack;
     position: absolute;
     font-size: 37px;
-    margin-top: 319px;
+    margin-top: 323px;
     margin-left: 80px;
     text-align: center;
 }
+
 .hightemps {
     position: absolute;
     text-align: center;
 }
+
 .hightemp {
     position: absolute;
 }
+
 .lowtemps {
     position: absolute;
     margin-top: 43px;
 }
+
 .lowtemp {
     position: absolute;
+}
+
+.almanac {
+    display: none;
+    position: absolute;
+}
+
+.almanacpanel {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 47px;
+}
+
+.sunrisesunsettimes {
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 103px;
+}
+
+.sunrisen {
+    font-size: 23px;
+    margin-top: 45px;
+}
+.sunsetn {
+    font-size: 23px;
+    margin-top: 24px;
+}
+.sunrise {
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 164px;
+    font-size: 25px;
+    width: 103px;
+    text-transform: lowercase;
+}
+.lowerplaceholder {
+    position: absolute;
+    margin-top: 141px;
+    width: 645px;
+    height: 207px;
+}
+.recordminy {
+    position: absolute;
+    font-size: 21px;
+    margin-top: 178px;
+    margin-left: 396px;
+}
+.stationname {
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-left: 11px;
+    letter-spacing: 0.8px;
+    font-size: 26px;
+    position: absolute;
+    color: white;
+}
+.recordhiyear {
+    position: absolute;
+    margin-top: 178px;
+    margin-left: 220px;
+    font-size: 21px;
+}
+.recordmin {
+    font-size: 29px;
+    margin-top: 171px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 457px;
+}
+.sunrisep {
+    position: absolute;
+    text-transform: lowercase;
+    margin-left: 161px;
+    margin-top: -78px;
+    width: 161px;
+    font-size: 26px;
+}
+.sunsetp {
+    width: 161px;
+    font-size: 26px;
+    position: absolute;
+    text-transform: lowercase;
+    margin-top: -28px;
+    margin-left: 159px;
+}
+.dayofweek001 {
+    margin-left: 160px;
+    position: absolute;
+    margin-top: 9px;
+    font-size: 21px;
+}
+.dayofweek002 {
+    margin-left: 333px;
+    position: absolute;
+    margin-top: 9px;
+    font-size: 21px;
+}
+.almanacdays {
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 13px;
+    margin-top: 39px;
+    font-size: 19px;
+}
+.yesterdaysactual {
+    position: absolute;
+    margin-top: 82px;
+    font-size: 22px;
+    margin-left: 13px;
+}
+.todaysaverage {
+    position: absolute;
+    font-size: 22px;
+    margin-top: 130px;
+    margin-left: 13px;
+}
+.todaysrecords {
+    position: absolute;
+    font-size: 22px;
+    margin-top: 177px;
+    margin-left: 13px;
+}
+.almanachi {
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 285px;
+    font-size: 18px;
+}
+.almanaclo {
+    position: absolute;
+    margin-top: 38px;
+    font-size: 18px;
+    margin-left: 457px;
+}
+.recordmax {
+    font-size: 29px;
+    margin-top: 171px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 284px;
+}
+.yesterdayhigh {
+ position: absolute;
+ margin-left: 284px;
+ font-size: 29px;
+ margin-top: 76px;
+}
+.yesterdaylow {
+    margin-top: 76px;
+ position: absolute;
+ margin-left: 457px;
+ font-size: 29px;
+}
+.averagehigh {
+    position: absolute;
+    margin-left: 284px;
+    font-size: 29px;
+    margin-top: 123px;
+}
+.averagelow {
+    position: absolute;
+    margin-left: 457px;
+    font-size: 29px;
+    margin-top: 123px;
 }
