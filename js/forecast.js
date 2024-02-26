@@ -55,7 +55,14 @@
    <div class="condition" id="weather06" style="margin-left: 610px;">${daypart[0].wxPhraseLong[12]}</div>`
  // 
 if (daypart[0].wxPhraseLong[0] == null) {
-  document.getElementById('hi0').innerHTML = `--`
+  document.getElementById('hightemplist').innerHTML = `
+  <div class="hightemp" id="hi0">--</div>
+  <div class="hightemp" id="hi1" style="margin-left: 93px;">${calendarDayTemperatureMax[1]}</div>
+  <div class="hightemp" id="hi2" style="margin-left: 181px;">${calendarDayTemperatureMax[2]}</div>
+  <div class="hightemp" id="hi3" style="margin-left: 275px;">${calendarDayTemperatureMax[3]}</div>
+  <div class="hightemp" id="hi4" style="margin-left: 367px;">${calendarDayTemperatureMax[4]}</div>
+  <div class="hightemp" id="hi5" style="margin-left: 457px;">${calendarDayTemperatureMax[5]}</div>
+  <div class="hightemp" id="hi6" style="margin-left: 546px;">${calendarDayTemperatureMax[6]}</div>`
   document.getElementById('conditions').innerHTML = `<div class="condition" id="weather00" style="margin-left: 66px;">${daypart[0].wxPhraseLong[1]}</div>
    <div class="condition" id="weather01" style="
  margin-left: 154px;
@@ -100,7 +107,8 @@ if (daypart[0].wxPhraseLong[0] == null) {
   <div class="condition" id="weather05" style="margin-left: 523px;">${daypart[0].wxPhraseLong[10]}</div>
   <div class="condition" id="weather06" style="margin-left: 610px;">${daypart[0].wxPhraseLong[12]}</div>`
 }
- document.getElementById('hightemplist').innerHTML = `                    <div class="hightemp" id="hi0">${calendarDayTemperatureMax[0]}</div>
+ document.getElementById('hightemplist').innerHTML = `
+ <div class="hightemp" id="hi0">${calendarDayTemperatureMax[0]}</div>
  <div class="hightemp" id="hi1" style="margin-left: 93px;">${calendarDayTemperatureMax[1]}</div>
  <div class="hightemp" id="hi2" style="margin-left: 181px;">${calendarDayTemperatureMax[2]}</div>
  <div class="hightemp" id="hi3" style="margin-left: 275px;">${calendarDayTemperatureMax[3]}</div>
