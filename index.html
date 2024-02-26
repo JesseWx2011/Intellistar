@@ -49,7 +49,7 @@
                 <div class="name"
                     style="margin-top: 107px; display: flex; margin-right: 15px; font-size: 22px; width: fit-content;">
                     PRESSURE</div>
-                <div id="pressure" style="margin-top: 100px;" class="value">30.31 <div class="small">INCHES</div>S</div>
+                <div id="pressure" style="margin-top: 100px;" class="value">30.31 <div id="pressunit" class="small">INCHES</div>S</div>
                 <div class="name"
                     style="margin-top: 153px; display: flex; margin-right: 15px; font-size: 22px; width: fit-content;">
                     VISIBILITY</div>
@@ -267,13 +267,12 @@
         var minute = d.getMinutes()
         if (hour >= 13) {
             var hour = `${hour - 12}`
-        } if (hour == 0) {
+        } else if (hour == 0) {
             var hour = `${hour + 12}`
         }
-        if (minute <= 9) {
+       else if (minute <= 9) {
             var minute = `0${minute}`
         }
-
         time.innerHTML = `${hour}:${minute}`
         if (alertac !== "null") {
             document.getElementById('time').style.color = "black"
@@ -319,13 +318,13 @@
     console.log(almanacm)
     document.getElementById("almanacdate").innerHTML = `${months[d.getMonth()]} ${d.getDate()}`
     // Section for day names for the extended forecast.
-    document.getElementById('ename0').innerHTML = `${weekdays[d.getDay() + 1]}`;
-    document.getElementById('ename1').innerHTML = `${weekdays[d.getDay() + 2]}`;
-    document.getElementById('ename2').innerHTML = `${weekdays[d.getDay() + 3]}`;
-    document.getElementById('ename3').innerHTML = `${weekdays[d.getDay() + 4]}`;
-    document.getElementById('ename4').innerHTML = `${weekdays[d.getDay() + 5]}`;
-    document.getElementById('ename5').innerHTML = `${weekdays[d.getDay() + 6]}`;
-    document.getElementById('ename6').innerHTML = `${weekdays[d.getDay() + 7]}`;
+    document.getElementById('ename0').innerHTML = `${weekdays[d.getDay()]}`;
+    document.getElementById('ename1').innerHTML = `${weekdays[d.getDay() + 1]}`;
+    document.getElementById('ename2').innerHTML = `${weekdays[d.getDay() + 2]}`;
+    document.getElementById('ename3').innerHTML = `${weekdays[d.getDay() + 3]}`;
+    document.getElementById('ename4').innerHTML = `${weekdays[d.getDay() + 4]}`;
+    document.getElementById('ename5').innerHTML = `${weekdays[d.getDay() + 5]}`;
+    document.getElementById('ename6').innerHTML = `${weekdays[d.getDay() + 6]}`;
 </script>   
 <script>
     getAlmanac();
@@ -357,16 +356,24 @@ getAlmanac();
 <script>
     sunrisesunset()
     var day1 = d.getDay() + 31
-    const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-${day1}`;
+    const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-31`;
+
     async function sunrisesunset() {
         const response = await fetch(solarurl)
         const data = await response.json()
         const {results} = data;
+        if (day1 >= 30) {
+       const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-30`;
+    } else {
+        const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-${day1}`;
+    }
         console.log(data)  
         document.getElementById("sunrise0").innerHTML = `${results[0].sunrise}`
         document.getElementById("sunset0").innerHTML = `${results[0].sunset}`
         document.getElementById("sunrise1").innerHTML = `${results[1].sunrise}`
         document.getElementById("sunset1").innerHTML = `${results[1].sunset}`
+        var timezone = `${results[0].timezone}`
+        console.log(timezone)
     }
     sunrisesunset();
     </script>
