@@ -34,7 +34,7 @@ document.getElementById('icon').innerHTML = `<img class="icon" src="./images/ico
   } else {
     var pressuredep = `↑`
   }
-  document.getElementById('pressure').innerHTML = `${observation.pressure} <div class="small">INCHES</div>${pressuredep}</div>`
+  document.getElementById('pressure').innerHTML = `${observation.pressure} <div class="small" id="pressunit">INCHES</div>${pressuredep}</div>`
 
  }
 ReturnWeather()
