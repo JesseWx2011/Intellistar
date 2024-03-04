@@ -2,6 +2,13 @@
 Version 1.1.5. Inital Relase: February 24th 2024
 Fixed Mismatched Icon
 Adjusted Weather for Extended Forecast (using word-wrap)
+V1.8.9. Inital Release: March 3rd 2024
+Yesterday's Temperature's Added to Almanac Slide
+To Come:
+Observations and Radar/Satalite Slide
+Radar Legends
 Ideas:
-Fullscreen mode
-Almanac
+Extra Forecast Slide
+Problems
+Some Conditions on the Forecast Slide aren't in the correct spot.
+Radar may overlap cities (I will fix this problem with a city overlay.)
