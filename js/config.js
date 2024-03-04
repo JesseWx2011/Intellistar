@@ -1,17 +1,21 @@
-    // Input your api-key
-var api_key = `e1f10a1e78da46f5b10a1e78da96f525`;
+// Updates that are coming soon:
+// Observations Slide
+// Input your api-key
+var api_key = `e1f10a1e78da46f5b10a1e78da96f525`; 
 // Input your mapbox key.
  var map_key = `pk.eyJ1IjoiaGFzdHl0dWJlIiwiYSI6ImNsa2hkZTh6bzAwazQzZHFyNmF5aTRsZGwifQ.5QJvYIHo0odZ5jCFApV7yw`
 
- var lat = "31.4618"
- var lon = "-100.4426"
- var icons = "XL"; // Types are 2007, 2010, and XL
+ var lat = "30.41041"
+ var lon = "-86.86299"
+ var icons = "2010"; // Types are 2007, 2010, and XL
+ var twciconstyle = "2005" // Changes the twc icon style. Types are 1996, 2005. Default is 2005
 // Very Important:
 // If your icons is 2007, change to gif.
 // If your icons is 2010, change to png.
-// No period before the file type. Otherwise it gives it out as iconno..png/gif
+// No period before the file type. Otherwise it gives it out as 26..png/gif
 var filet = `png` // gif or png. No period included
-var locationn =  "San Angelo" // The Name of your location. Capital Letters are not required. 
+var locationn =  "Navarre" // Your Location.
+var forecastlocation = `Okaloosa County` // The Location that appears on the forecast. You can do ${locationn} for the city name above
 var units = "e" // The Units displayed. e is imperial, m is metric, h is hybrid. Default is e.
 // This is the message that appears on the marquee.
 var marquee_message = "The Weather Channel is the #1 Source for important weather information. Check out our website at weather.com and get weather information for your area! Also, check out our mobile app avaliable on iOS and Android! "
