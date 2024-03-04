@@ -1,4 +1,3 @@
-
 <html>
 <!-- Meta Tags and other stuff. -->
 <meta name="authors" content="Jesse Hasty">
@@ -12,7 +11,6 @@
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/alerts.js"></script>
 <script type="text/javascript" src="./js/forecast.js"></script>
-<script type="text/javascript" src="./js/radar.js"></script>
 <!-- CSS -->
 <link rel="stylesheet" href="./css/intelli.css">
 <body>
@@ -217,7 +215,8 @@
                     Bible Verse is John 13:11. For he knew who was going to betray him, and that was why he said not
                     every one was clean.</marquee><img id="marqueebar" class="scroll" src="./images/ldl/LDLBar.png">
             </div>
-            <img class="twcimg" id="imageatime" style="position: absolute;" src="./images/twc.png">
+            <div id="twciconco" style="position: absolute; display: flex;">
+            <img class="twcimg" id="imageatime" style="position: absolute;" src="./images/twcicons/2005.png"></div>
             <div id="innertime">
                 <div class="timer" id="time" style="position: absolute; margin-left: 681px;">12:00</div>
                 </img>
@@ -230,9 +229,10 @@
     <source id="music" src="./music//Winter/Once and Again - Snuffy.wav" type="audio/wav">
 </audio>
 <!-- Stuff I could not put into a JS file. -->
+<!-- slides.js -->   
 <script>
-    function myFunction() {
-        document.getElementById('nextslide').style.display = "none"
+  function myFunction() {
+      document.getElementById('nextslide').style.display = "none"
         document.getElementById("radarslide").style.display = "block"
         console.log('next slide.')
     };
@@ -259,6 +259,7 @@
 
 </script>
 </script>
+<!-- time.js -->   
 <script>
     getTime()
     async function getTime() {
@@ -267,19 +268,20 @@
         var minute = d.getMinutes()
         if (hour >= 13) {
             var hour = `${hour - 12}`
-        } else if (hour == 0) {
+        }  if (hour == 0) {
             var hour = `${hour + 12}`
         }
-       else if (minute <= 9) {
+        if (minute <= 9) {
             var minute = `0${minute}`
-        }
+        };
         time.innerHTML = `${hour}:${minute}`
+
+        const timecolorset = document.getElementById('time');
+        console.log(alertac)
         if (alertac !== "null") {
-            document.getElementById('time').style.color = "black"
-        } else if (alertac = "null") {
-            document.getElementById('time').style.color = "white"
-        } else {
-            document.getElementById('time').style.color = "black"
+           timecolorset.style.color = "black"
+        } else if (alertac == "null") {
+            timecolorset.style.color = "white"
         }
     }
     getTime();
@@ -287,13 +289,14 @@
 </script>
 <script>
     // Fetch Radar title imagery
-    map_img = `https://api.mapbox.com/styles/v1/goldbblazez/cl6jfozbb001h15sdx9ze69f7/static/${lon},${lat},7/729x546?access_token=${map_key}`
+    map_img = `https://api.mapbox.com/styles/v1/goldbblazez/ckgc8lzdz4lzh19qt7q9wbbr9/static/${lon},${lat},8/729x546?access_token=${map_key}`
     radar_url = `https://maps.aerisapi.com/Ok3aWX6hA5NczrIqqEzEz_Jrya0titpdLg7wrKlqqPEafJAbRLsBbMpcRPR5CO/radar/729x546/${lat},${lon},8/latest.png`
     document.getElementById("mapboxmap").innerHTML = `<img style="position: absolute;" src="${map_img}"></img>`
     document.getElementById('radarimagery').innerHTML = `<img style="position: absolute; background-color: transparent;" src="${radar_url}"></img>`
 
 
 </script>
+<!-- weekdays.js -->   
 <script>
     // Script for weekdays
     const d = new Date();
@@ -325,34 +328,8 @@
     document.getElementById('ename4').innerHTML = `${weekdays[d.getDay() + 4]}`;
     document.getElementById('ename5').innerHTML = `${weekdays[d.getDay() + 5]}`;
     document.getElementById('ename6').innerHTML = `${weekdays[d.getDay() + 6]}`;
-</script>   
-<script>
-    getAlmanac();
-const almanacurl = `https://api.weather.com/v3/wx/almanac/daily/5day?geocode=${lat},${lon}&format=json&units=${units}&startDay=${day}&startMonth=${month}&apiKey=e1f10a1e78da46f5b10a1e78da96f525`
-async function getAlmanac() {  
- const response = await fetch(almanacurl)
- const data = await response.json();
- const {almanacRecordYearMin, almanacRecordYearMax, stationName, temperatureRecordMin, temperatureAverageMax, temperatureAverageMin, temperatureRecordMax} = data;
- console.log(data)
- // Almanac Weekdays
-document.getElementById('almanacday0').innerHTML = `${almanacwkday01}`
-document.getElementById("almanacday1").innerHTML = `${almanacwkday02}`
- // Yesterday's Temps
- document.getElementById('yesthi').innerHTML = `--`
- document.getElementById('yestlo').innerHTML = `--`
- // Today's Average
-  document.getElementById('avhi').innerHTML = `${temperatureAverageMax[0]}`
-  document.getElementById('avlo').innerHTML = `${temperatureAverageMin[0]}`
- // Records
- document.getElementById('rmin').innerHTML = `${temperatureRecordMin[0]}`
- document.getElementById("rmax").innerHTML = `${temperatureRecordMax[0]}`
- // Record Years
- document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
- document.getElementById("minyear").innerHTML = `${almanacRecordYearMin[0]}`;
- document.getElementById("station").innerHTML = `${stationName[0]}`
-}
-getAlmanac();
 </script>
+<!-- suntimes.js -->   
 <script>
     sunrisesunset()
     var day1 = d.getDay() + 31
@@ -376,4 +353,56 @@ getAlmanac();
         console.log(timezone)
     }
     sunrisesunset();
+    </script>
+    <script>
+         changeicon();
+ async function changeicon() {
+        var icon = `${twciconstyle}`
+    console.log(icon)
+    document.getElementById('twciconco').innerHTML =  `<img class="twcimg" id="imageatime" style="position: absolute;" src="./images/twcicons/${icon}.png"></div>`;
+ }
+changeicon()
+    </script>
+    <!-- history.js -->
+    <script>
+        getAlmanac();
+    const almanacurl = `https://api.weather.com/v3/wx/almanac/daily/5day?geocode=${lat},${lon}&format=json&units=${units}&startDay=${day}&startMonth=${month}&apiKey=e1f10a1e78da46f5b10a1e78da96f525`
+    async function getAlmanac() {  
+     const response = await fetch(almanacurl)
+     const data = await response.json();
+     const {almanacRecordYearMin, almanacRecordYearMax, stationName, temperatureRecordMin, temperatureAverageMax, temperatureAverageMin, temperatureRecordMax} = data;
+     console.log(data)
+     // Almanac Weekdays
+    document.getElementById('almanacday0').innerHTML = `${almanacwkday01}`
+    document.getElementById("almanacday1").innerHTML = `${almanacwkday02}`
+     // Yesterday's Temps
+     document.getElementById('yesthi').innerHTML = `--`
+     document.getElementById('yestlo').innerHTML = `--`
+     // Today's Average
+      document.getElementById('avhi').innerHTML = `${temperatureAverageMax[0]}`
+      document.getElementById('avlo').innerHTML = `${temperatureAverageMin[0]}`
+     // Records
+     document.getElementById('rmin').innerHTML = `${temperatureRecordMin[0]}`
+     document.getElementById("rmax").innerHTML = `${temperatureRecordMax[0]}`
+     // Record Years
+     document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
+     document.getElementById("minyear").innerHTML = `${almanacRecordYearMin[0]}`;
+     document.getElementById("station").innerHTML = `${stationName[0]}`
+    }
+    getAlmanac();
+    </script>
+    <script>
+            // Function for Yesterday's high and low.
+    yesterdaytemps();
+    async function yesterdaytemps() {
+        const historyurl = `https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?geocode=${lat},${lon}&language=${lang}-${country}&format=json&units=${units}&apiKey=${api_key}`
+        const response = await fetch(historyurl);
+        const data = await response.json();
+        const {temperatureMax, temperatureMin} = data;
+        console.log(data)
+
+        document.getElementById("yesthi").innerHTML = `${temperatureMax[0]}`
+        document.getElementById("yestlo").innerHTML = `${temperatureMin[0]}`
+    }
+    yesterdaytemps();
     </script>
