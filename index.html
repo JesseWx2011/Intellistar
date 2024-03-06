@@ -11,12 +11,14 @@
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/alerts.js"></script>
 <script type="text/javascript" src="./js/forecast.js"></script>
+<script type="text/javascript" src="./js/slides.js"></script>
 <!-- CSS -->
 <link rel="stylesheet" href="./css/intelli.css">
 <body>
     <!-- The Current Conditions Section.  -->
     <div class="container">
-        <img style="width: 729px; height: 547px;" src="./images/bg/bg1.png">
+        <div id="bg">
+        <img style="width: 729px; height: 547px;" src="./images/bg/bg1.png"></div>
         <div id="nextslide" style="position: absolute;">
             <img class="panel" src="./images/panels/cc.png" style="opacity: 89.33%; position: absolute;">
             <div class="slideplaceholder">Now</div>
@@ -146,11 +148,11 @@
                 <div class="forecast" id="forecast3">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide3()">Next
-                    Slide.</button>
+                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide3()">Next Slide.</button>
             </div>
         </div>
         <div class="extendedcontainer" id="extendedforecast">
+            <button id="forecastslidebutton" style="position: absolute;" onclick="redirect()">Restart the Emulator.</button>
             <div class="slideplaceholder" style="margin-top: 38px;margin-left: 67px;font-size: 38px;">The Week Ahead
             </div>
             <div class="citynames">
@@ -210,7 +212,7 @@
         <!-- Bottom -->
         <div class="marqueeimg">
             <div class="innerldlimg" id="nmarquee" style="position: absolute;">
-                <div class="alert" id="nwsalert"></div>
+                <div class="alert" id="nwsalert">NN</div>
                 <marquee class="marquee" id="scrollingmarquee" float="left" scrollamount="6" scrolldelay="100">Today's
                     Bible Verse is John 13:11. For he knew who was going to betray him, and that was why he said not
                     every one was clean.</marquee><img id="marqueebar" class="scroll" src="./images/ldl/LDLBar.png">
@@ -229,35 +231,6 @@
     <source id="music" src="./music//Winter/Once and Again - Snuffy.wav" type="audio/wav">
 </audio>
 <!-- Stuff I could not put into a JS file. -->
-<!-- slides.js -->   
-<script>
-  function myFunction() {
-      document.getElementById('nextslide').style.display = "none"
-        document.getElementById("radarslide").style.display = "block"
-        console.log('next slide.')
-    };
-    function forecastslide() {
-        document.getElementById('radarslide').style.display = "none"
-        document.getElementById('almanacslide').style.display = "block"
-    }
-    function forecastslidee() {
-        document.getElementById('almanacslide').style.display = "none"
-        document.getElementById('forecastpanel').style.display = "block"
-    }
-    function forecastslide1() {
-        document.getElementById('forecastpanel').style.display = "none"
-        document.getElementById('forecastpanel1').style.display = "block"
-    }
-    function forecastslide2() {
-        document.getElementById('forecastpanel1').style.display = "none"
-        document.getElementById('forecastpanel2').style.display = "block"
-    }
-    function forecastslide3() {
-        document.getElementById('forecastpanel2').style.display = "none";
-        document.getElementById('extendedforecast').style.display = "block"
-    }
-
-</script>
 </script>
 <!-- time.js -->   
 <script>
@@ -275,18 +248,11 @@
             var minute = `0${minute}`
         };
         time.innerHTML = `${hour}:${minute}`
-
-        const timecolorset = document.getElementById('time');
-        console.log(alertac)
-        if (alertac !== "null") {
-           timecolorset.style.color = "black"
-        } else if (alertac == "null") {
-            timecolorset.style.color = "white"
-        }
     }
     getTime();
     setInterval(getTime, 5000)
 </script>
+<!-- radar.js -->
 <script>
     // Fetch Radar title imagery
     map_img = `https://api.mapbox.com/styles/v1/goldbblazez/ckgc8lzdz4lzh19qt7q9wbbr9/static/${lon},${lat},8/729x546?access_token=${map_key}`
@@ -387,7 +353,7 @@ changeicon()
      // Record Years
      document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
      document.getElementById("minyear").innerHTML = `${almanacRecordYearMin[0]}`;
-     document.getElementById("station").innerHTML = `${stationName[0]}`
+     document.getElementById("station").innerHTML = `${almanacstationname}`
     }
     getAlmanac();
     </script>
@@ -403,6 +369,15 @@ changeicon()
 
         document.getElementById("yesthi").innerHTML = `${temperatureMax[0]}`
         document.getElementById("yestlo").innerHTML = `${temperatureMin[0]}`
+        if (temperatureMin[0] == null) {
+            yestlo.innerHTML = `${temperatureMin[1]}`
+        } else {
+            yestlo.innerHTML = `${temperatureMin[0]}`
+        }
+        // Ignore this, for Background.
+        document.getElementById('bg').innerHTML = `<img style="width: 729px; height: 547px;" src="./images/bg/${bg}.${bgformat}">`
     }
     yesterdaytemps();
     </script>
+<script>
+</script>
