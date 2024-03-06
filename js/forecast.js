@@ -4,8 +4,8 @@
   const response = await fetch(forecast_url);
   const data = await response.json();
   const {calendarDayTemperatureMax, calendarDayTemperatureMin, daypart, narrative} = data;
-    console.log(data);
-    if (daypart[0].narrative[0] !== null) {
+  console.log(data);
+  if (daypart[0].narrative[0] !== null) {
       var forecast = `${daypart[0].narrative[0]}`;
       var dayname =  `${daypart[0].daypartName[0]}`;
       var forecast0 = `${daypart[0].narrative[1]}`;
@@ -31,10 +31,10 @@
       document.getElementById('daypartn3').innerHTML = `${dayname1}`
       document.getElementById('forecast3').innerHTML = `${forecast1}`
       // City Stuff
-      document.getElementById('citynf').textContent = `${locationn}`
-      document.getElementById('citynf1').textContent = `${locationn}`;
-      document.getElementById('citynf2').textContent = `${locationn}`
-      document.getElementById("citynamee").textContent = `${locationn}`
+      document.getElementById('citynf').textContent = `${forecastlocation}`
+      document.getElementById('citynf1').textContent = `${forecastlocation}`;
+      document.getElementById('citynf2').textContent = `${forecastlocation}`
+      document.getElementById("citynamee").textContent = `${forecastlocation}`
    // Extended Forecast
    document.getElementById('icons').innerHTML = `<img id="icon0" src="./images/icons/${icons}/${daypart[0].iconCode[0]}.${filet}">
    <img id="icon1" style="margin-left: 151px" src="./images/icons/${icons}/${daypart[0].iconCode[2]}.${filet}">
