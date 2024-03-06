@@ -17,13 +17,13 @@ console.log(data);
   document.getElementById('feelslike').innerHTML = `${observation.feels_like}&deg;`
   // Set marquee
   document.getElementById('scrollingmarquee').innerHTML = `${marquee_message}`
-  // Music
-  document.getElementById('music').innerHTML = `<source id="music"  src="./music/${playlist}/${music}.${audiotype}" type="audio/${audiotype}"> `
-if (observation.gust = "null") {
-   gusts.innerHTML = `None`
-}
 document.getElementById('icon').innerHTML = `<img class="icon" src="./images/icons/${icons}/${observation.wx_icon}.${filet}">`;
-
+// Set gusts to none if gust is null
+ if (observation.gust == null) {
+  gusts.innerHTML = `None`
+ } else {
+  gusts.innerHTML = `${observation.gusts}`
+ }
   var pressuret = `${observation.pressure_desc}`
   if (pressuret = `Falling`) {
     var pressuredep = `↓`;
@@ -35,6 +35,7 @@ document.getElementById('icon').innerHTML = `<img class="icon" src="./images/ico
     var pressuredep = `↑`
   }
   document.getElementById('pressure').innerHTML = `${observation.pressure} <div class="small" id="pressunit">INCHES</div>${pressuredep}</div>`
+  console.log(`URL:`, window.location);
 
  }
 ReturnWeather()
