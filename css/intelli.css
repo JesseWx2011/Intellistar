@@ -121,6 +121,7 @@ body {
 .twcimg {
     position: absolute;
     width: 67px;
+    height: 67px;
     margin-left: 732px;
     margin-top: 6px;
 }
