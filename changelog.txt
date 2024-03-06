@@ -4,6 +4,12 @@ Fixed Mismatched Icon
 Adjusted Weather for Extended Forecast (using word-wrap)
 V1.8.9. Inital Release: March 4th 2024
 Yesterday's Temperature's Added to Almanac Slide
+V1.9.1 (Major Update) Inital Release: March 6th 2024
+Music Function Removed.
+Watch and Warning LDL Bar Function
+Time Color Not Changing for Alert on LDL Bar Fixed.
+Custom Background Options. (If you want to implement your own background, put it in images/bg. Make sure to check the file type, ex. jpg, jpeg, png, etc.)
+Narrations Function Removed (They probably will return eventually in a future update.)
 To Come:
 Observations and Radar/Satalite Slide
 Radar Legends
