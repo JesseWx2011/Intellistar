@@ -5,25 +5,23 @@ var api_key = `e1f10a1e78da46f5b10a1e78da96f525`;
 // Input your mapbox key.
  var map_key = `pk.eyJ1IjoiaGFzdHl0dWJlIiwiYSI6ImNsa2hkZTh6bzAwazQzZHFyNmF5aTRsZGwifQ.5QJvYIHo0odZ5jCFApV7yw`
 
- var lat = "30.41041"
- var lon = "-86.86299"
+ var lat = "39.2887346"
+ var lon = "-76.6118655"
  var icons = "2010"; // Types are 2007, 2010, and XL
- var twciconstyle = "2005" // Changes the twc icon style. Types are 1996, 2005. Default is 2005
+ var bg = "bg1" // Insert your custom background. bg1 is the default. Put it in images/bg folder
+ var bgformat = "png" // If your image is other than png, set the image file type. Do not include a dot before the file type.
 // Very Important:
 // If your icons is 2007, change to gif.
 // If your icons is 2010, change to png.
 // No period before the file type. Otherwise it gives it out as 26..png/gif
 var filet = `png` // gif or png. No period included
-var locationn =  "Navarre" // Your Location.
-var forecastlocation = `Okaloosa County` // The Location that appears on the forecast. You can do ${locationn} for the city name above
-var units = "e" // The Units displayed. e is imperial, m is metric, h is hybrid. Default is e.
+var locationn =  "Baltimore City" // Your Location.
+var forecastlocation = `Baltimore` // The Location that appears on the forecast. You can do ${locationn} for the city name above
+var almanacstationname = "Baltimore Thurgood Marshall Airport"
+var units = "e" // The Units displayed. e is imperial, m is metric, h is hybrid, s is (the) kelvin. Default is e.
 // This is the message that appears on the marquee.
 var marquee_message = "The Weather Channel is the #1 Source for important weather information. Check out our website at weather.com and get weather information for your area! Also, check out our mobile app avaliable on iOS and Android! "
-// This Script may be removed soon due to the audio not always playing and the confusing configuration. You can play your own music via a file, or on the web!
-// Music
- var music = `Once and Again - Snuffy` // Your music. You need the exact name of the music file though. Example: High Tides of Maui - Ficara.
- var audiotype = `.wav` // Your audio format. Examples: .wav, .mp3, .mpeg, etc.
- var playlist = `Winter` // The Playlist the music is being played in. There is Spring, Summer, Atummn, Winter, and Christmas. Leave it blank for automatic playlist
+// The Music Configuration Removed was on March 4th 2024.
 
  // Alert Configuration
  var country = "US" // Two Letter Country Code. Some Countries are not supported. https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-alert-details
