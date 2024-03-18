@@ -1,5 +1,5 @@
-
 <html>
+    <!-- So much later that the old narrator got tired, so they had to hire a new one -->
 <!-- Meta Tags and other stuff. -->
 <meta name="authors" content="Jesse Hasty">
 <meta name="keywords" content="Intellistar, Weather Channel, Local Forecast">
@@ -13,6 +13,7 @@
 <script type="text/javascript" src="./js/alerts.js"></script>
 <script type="text/javascript" src="./js/forecast.js"></script>
 <script type="text/javascript" src="./js/slides.js"></script>
+<script src="./js/time.js"></script>
 <!-- CSS -->
 <link rel="stylesheet" href="./css/intelli.css">
 <body>
@@ -20,14 +21,11 @@
     <div class="container">
         <div id="bg">
         <img style="width: 729px; height: 547px;" src="./images/bg/bg1.png"></div>
+        <!-- Current Conditions Slide -->
         <div id="nextslide" style="position: absolute;">
             <img class="panel" src="./images/panels/cc.png" style="opacity: 89.33%; position: absolute;">
             <div class="slideplaceholder">Now</div>
-            <button id="nextslidebutton" onclick="myFunction()" style="height: fit-content;">Next Slide</button>
-            <audio style="width: 0px; position: absolute;" controls autoplay>
-                <source id="music" src="./narrations/Your_current_conditions.mp3" style="position: absolute;"
-                    type="audio/wav">
-            </audio>
+            <button id="nextslidebutton" onclick="myFunction()"  style="height: fit-content;">Next Slide</button>
             <!-- City Name -->
             <div class="city" id="cityn">WASHINGTON</div>
             <div id="icon" class="iconc">
@@ -70,12 +68,23 @@
                 <div id="feelslike" style="margin-top: 283px; width: 133px;" class="value">28&deg;</div>
             </div>
         </div>
+        <div id="alertslide" class="alert-slide">
+            <div class="slideplaceholder" style="letter-spacing: 1.6px;width: 660px;margin-top: 40px;margin-left: 46px;">Weather Bulletin</div>
+            <button id="radarbutton" style="position: absolute;" onclick="radar()">Next Slide</button>
+            <img class="bulletinpanel" src="./images/panels/bulletin.png">
+            <div class="alert" id="alerttext">No Alert.</div>
+            <p class="nwstextbulletin">The National Weather Service</p>
+            <img class="noaalogo" src="./images/twcicons/noaalogo.png">
+            <img class="bulletinimage" src="./images/bg/weatherbulletin.png">
+        </div>
         <div class="radarcontainer" id="radarslide">
             <div id="mapboxmap"></div>
             <div class="mosaicthing" id="radarimagery"></div>
             <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide()">Next Slide.</button>
             <img class="radarpanel" src="./images/panels/radarpanel.png"></img>
             <div class="slideplaceholder" style="width: 660px; margin-top: 42px;">Regional Radar</div>
+            <div class="rainlegend" id="rain" style="position: absolute; color: #4d6a81; margin-left: 63px; margin-top: 85px; font-size: 21px;">rain</div>
+            <img class="rainimg" src="./images/panels/radar.png">
         </div>
         <div class="almanac" id="almanacslide">
             <div class="almanacpanel">
@@ -213,7 +222,7 @@
         <!-- Bottom -->
         <div class="marqueeimg">
             <div class="innerldlimg" id="nmarquee" style="position: absolute;">
-                <div class="alert" id="nwsalert">NN</div>
+                <div class="alert" id="nwsalert"></div>
                 <marquee class="marquee" id="scrollingmarquee" float="left" scrollamount="6" scrolldelay="100">Today's
                     Bible Verse is John 13:11. For he knew who was going to betray him, and that was why he said not
                     every one was clean.</marquee><img id="marqueebar" class="scroll" src="./images/ldl/LDLBar.png">
@@ -232,28 +241,11 @@
 </script>
 <!-- time.js -->   
 <script>
-    getTime()
-    async function getTime() {
-        let d = new Date();
-        var hour = d.getHours();
-        var minute = d.getMinutes()
-        if (hour >= 13) {
-            var hour = `${hour - 12}`
-        }  if (hour == 0) {
-            var hour = `${hour + 12}`
-        }
-        if (minute <= 9) {
-            var minute = `0${minute}`
-        };
-        time.innerHTML = `${hour}:${minute}`
-    }
-    getTime();
-    setInterval(getTime, 5000)
 </script>
 <!-- radar.js -->
 <script>
     // Fetch Radar title imagery
-    map_img = `https://api.mapbox.com/styles/v1/goldbblazez/ckgc8lzdz4lzh19qt7q9wbbr9/static/${lon},${lat},8/729x546?access_token=${map_key}`
+    map_img = `https://api.mapbox.com/styles/v1/goldbblazez/ckgc8lzdz4lzh19qt7q9wbbr9/static/${lon},${lat},7/729x546?access_token=${map_key}`
     radar_url = `https://maps.aerisapi.com/Ok3aWX6hA5NczrIqqEzEz_Jrya0titpdLg7wrKlqqPEafJAbRLsBbMpcRPR5CO/radar/729x546/${lat},${lon},8/latest.png`
     document.getElementById("mapboxmap").innerHTML = `<img style="position: absolute;" src="${map_img}"></img>`
     document.getElementById('radarimagery').innerHTML = `<img style="position: absolute; background-color: transparent;" src="${radar_url}"></img>`
@@ -318,6 +310,7 @@
     }
     sunrisesunset();
     </script>
+    <!-- icon.js -->
     <script>
          changeicon();
  async function changeicon() {
@@ -355,6 +348,7 @@ changeicon()
     }
     getAlmanac();
     </script>
+    <!-- almanac2.js -->
     <script>
             // Function for Yesterday's high and low.
     yesterdaytemps();
@@ -378,4 +372,28 @@ changeicon()
     yesterdaytemps();
     </script>
 <script>
+</script>
+<!-- ldltime.js -->
+<script>
+function getTime() {
+    let d = new Date();
+    var hour = d.getHours();
+    var minute = d.getMinutes()
+    console.log(hour + ':' + minute)
+    if (hour >= 13) {
+        var hour = `${hour - 12}`
+    }  if (hour == 0) {
+        var hour = `${hour + 12}`
+    }
+    if (minute <= 9) {
+        var minute = `0${minute}`
+    };
+    document.getElementById("time").innerHTML = `${hour}:${minute}`
+
+}
+getTime()
+setInterval(getTime, 5000)
+</script>
+<script>
+
 </script>
