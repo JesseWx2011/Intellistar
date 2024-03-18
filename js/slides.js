@@ -1,9 +1,13 @@
 function myFunction() {
     document.getElementById('nextslide').style.display = "none"
-      document.getElementById("radarslide").style.display = "block"
+      document.getElementById("alertslide").style.display = "block"
       console.log('next slide.')
   };
-  function forecastslide() {
+  function radar() {
+    document.getElementById("radarslide").style.display = "block"
+    document.getElementById("alertslide").style.display = "none"
+  }
+function forecastslide() {
       document.getElementById('radarslide').style.display = "none"
       document.getElementById('almanacslide').style.display = "block"
   }
@@ -26,3 +30,4 @@ function myFunction() {
   function redirect() {
     window.location = `./index.html`
   }
+  // Did not know where else to put this, so I put it here. This is a function for the weather bulletin slide.
