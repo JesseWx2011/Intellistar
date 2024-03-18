@@ -317,10 +317,12 @@ body {
     font-size: 23px;
     margin-top: 45px;
 }
+
 .sunsetn {
     font-size: 23px;
     margin-top: 24px;
 }
+
 .sunrise {
     position: absolute;
     margin-top: 43px;
@@ -329,18 +331,21 @@ body {
     width: 103px;
     text-transform: lowercase;
 }
+
 .lowerplaceholder {
     position: absolute;
     margin-top: 141px;
     width: 645px;
     height: 207px;
 }
+
 .recordminy {
     position: absolute;
     font-size: 21px;
     margin-top: 178px;
     margin-left: 396px;
 }
+
 .stationname {
     text-transform: uppercase;
     margin-top: 3px;
@@ -350,12 +355,14 @@ body {
     position: absolute;
     color: white;
 }
+
 .recordhiyear {
     position: absolute;
     margin-top: 178px;
     margin-left: 220px;
     font-size: 21px;
 }
+
 .recordmin {
     font-size: 29px;
     margin-top: 171px;
@@ -363,6 +370,7 @@ body {
     position: absolute;
     margin-left: 457px;
 }
+
 .sunrisep {
     position: absolute;
     text-transform: lowercase;
@@ -371,6 +379,7 @@ body {
     width: 161px;
     font-size: 26px;
 }
+
 .sunsetp {
     width: 161px;
     font-size: 26px;
@@ -379,18 +388,21 @@ body {
     margin-top: -28px;
     margin-left: 159px;
 }
+
 .dayofweek001 {
     margin-left: 160px;
     position: absolute;
     margin-top: 9px;
     font-size: 21px;
 }
+
 .dayofweek002 {
     margin-left: 333px;
     position: absolute;
     margin-top: 9px;
     font-size: 21px;
 }
+
 .almanacdays {
     position: absolute;
     text-transform: uppercase;
@@ -398,36 +410,42 @@ body {
     margin-top: 39px;
     font-size: 19px;
 }
+
 .yesterdaysactual {
     position: absolute;
     margin-top: 82px;
     font-size: 22px;
     margin-left: 13px;
 }
+
 .todaysaverage {
     position: absolute;
     font-size: 22px;
     margin-top: 130px;
     margin-left: 13px;
 }
+
 .todaysrecords {
     position: absolute;
     font-size: 22px;
     margin-top: 177px;
     margin-left: 13px;
 }
+
 .almanachi {
     position: absolute;
     margin-top: 38px;
     margin-left: 285px;
     font-size: 18px;
 }
+
 .almanaclo {
     position: absolute;
     margin-top: 38px;
     font-size: 18px;
     margin-left: 457px;
 }
+
 .recordmax {
     font-size: 29px;
     margin-top: 171px;
@@ -435,27 +453,90 @@ body {
     position: absolute;
     margin-left: 284px;
 }
+
 .yesterdayhigh {
- position: absolute;
- margin-left: 284px;
- font-size: 29px;
- margin-top: 76px;
+    position: absolute;
+    margin-left: 284px;
+    font-size: 29px;
+    margin-top: 76px;
 }
+
 .yesterdaylow {
     margin-top: 76px;
- position: absolute;
- margin-left: 457px;
- font-size: 29px;
+    position: absolute;
+    margin-left: 457px;
+    font-size: 29px;
 }
+
 .averagehigh {
     position: absolute;
     margin-left: 284px;
     font-size: 29px;
     margin-top: 123px;
 }
+
 .averagelow {
     position: absolute;
     margin-left: 457px;
     font-size: 29px;
     margin-top: 123px;
+}
+
+.rainimg {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 111px;
+    height: 11px;
+    image-rendering: auto;
+    font-family: Interstate-Bold;
+}
+
+.rainlegend {
+    position: absolute;
+    color: #4d6a81;
+    margin-left: 63px;
+    margin-top: 85px;
+    font-size: 21px;
+}
+.alert-slide {
+    display: none;
+    position: absolute;
+}
+.bulletinimage {
+    width: 728px;
+}
+.bulletinpanel {
+    width: 653px;
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 36px;
+    height: 351px;
+}
+.noaalogo {
+    width: 68px;
+    position: absolute;
+    margin-top: 89px;
+    margin-left: 41px;
+}
+.nwstextbulletin {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-left: 102px;
+    letter-spacing: 0.4px;
+    font-size: 17px;
+}
+.alert {
+    position: absolute;
+    font-family: Interstate;
+    width: 608px;
+    font-size: 29px;
+    line-height: 37px;
+    word-spacing: 2px;
+    text-transform: none;
+    margin-left: 48px;
+    font-weight: 400;
+    color: white;
+    margin-top: 157px;
 }
