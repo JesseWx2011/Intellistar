@@ -10,6 +10,13 @@ Watch and Warning LDL Bar Function
 Time Color Not Changing for Alert on LDL Bar Fixed.
 Custom Background Options. (If you want to implement your own background, put it in images/bg. Make sure to check the file type, ex. jpg, jpeg, png, etc.)
 Narrations Function Removed (They probably will return eventually in a future update.)
+V1.9.1 (Build 2)
+Alert Slide Added
+Fixed Bugs
+Narrations Folder Removed.
+Note: The Alert Slide will appear even with no alerts, however it will just say "No Alerts.".
+
+-----
 To Come:
 Observations and Radar/Satalite Slide
 Radar Legends
