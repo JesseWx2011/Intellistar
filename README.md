@@ -12,7 +12,6 @@ Inspired by buffbears/weatherscan. This project was made by me.
  <h2>2. Extract to a folder or directory.</h2>
  <img src="./setup/setup2.png">
  <h2>3. Head to the folder where you extracted your files.</h2>
- <img src="./setup/setup3.png">
  <h2>4. Head to config.js, you will need your latitude and longitude, and set all the other stuff in the Configuration. Includes music, language setting, and your custom marquee..</h2>
  <img src="./setup/setup4.png">
  <h2>5. Run index.html, and click the "Next Slide" button for the next segment.</h2>
