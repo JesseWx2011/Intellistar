@@ -19,7 +19,6 @@ Note: The Alert Slide will appear even with no alerts, however it will just say 
 -----
 To Come:
 Observations and Radar/Satalite Slide
-Radar Legends
 Ideas:
 Extra Forecast Slide
 Problems
