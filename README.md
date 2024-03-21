@@ -2,7 +2,7 @@
 Inspired by buffbears/weatherscan. This project was made by me.
  <h1 align="center">This is the intellistar project! Made by Jesse Hasty.•</h1>
  <b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b>
-# Information
+<h1>Information</h1>
 <p>• This Project was started in Mid-February 2024.</p>
 <p>• 2010 Icons are from buffbears/Weatherscan (The respitory that inspired this project.)</p>
 <p>• I am the only one who contributed to this project.</p>
