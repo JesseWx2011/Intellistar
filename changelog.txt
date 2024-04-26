@@ -15,6 +15,10 @@ Alert Slide Added
 Fixed Bugs
 Narrations Folder Removed.
 Note: The Alert Slide will appear even with no alerts, however it will just say "No Alerts.".
+V1.9.4 (Build 1) Inital Release: April 26th 2024
+Fixed an Error where the alert on the LDL bar would not show up
+Removed Music Directory
+A couple of text re-alignments
 
 -----
 To Come:
