@@ -3,14 +3,15 @@ Inspired by buffbears/weatherscan. This project was made by me.
  <h1 align="center">This is the intellistar project! Made by Jesse Hasty.•</h1>
  <b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b>
 <h1>Information</h1>
-<p>• This Project was started in Mid-February 2024.</p>
-<p>• 2010 Icons are from buffbears/Weatherscan (The respitory that inspired this project.)</p>
-<p>• I am the only one who contributed to this project.</p>
+<li>I recommend you are on Windows 7 or Later.</li>
+<li>This Project was started on February 20th 2024</li>
+<li>2010 Icons are from buffbears/Weatherscan (The respitory that inspired this project.)</li>
 # Instructions
 <h2>1. Download the zip file. Click code, then download as zip file. It will most likely appear in your downloads folder</h2>
 <img src="./setup/setup0.png">
  <img src="./setup/setup1.png">
  <h2>2. Extract to a folder or directory.</h2>
+ <li>Or copy and paste it into a folder</li>
  <img src="./setup/setup2.png">
  <h2>3. Head to the folder where you extracted your files.</h2>
   <img src="./setup/setup3.png">
