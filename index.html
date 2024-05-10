@@ -154,7 +154,7 @@
                 <div class="forecast" id="forecast2">Sunny. </div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide2()">Next
+                <button id="forecastslidebutton1" style="position: absolute;" onclick="forecastslide2()">Next
                     Slide.</button>
             </div>
         </div>
@@ -167,12 +167,12 @@
                 <div class="forecast" id="forecast3">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide3()">Next
+                <button id="forecastslidebutton2" style="position: absolute;" onclick="forecastslide3()">Next
                     Slide.</button>
             </div>
         </div>
         <div class="extendedcontainer" id="extendedforecast">
-            <button id="forecastslidebutton" style="position: absolute;" onclick="redirect()">Restart the
+            <button id="forecastslidebutton3" style="position: absolute;" onclick="redirect()">Restart the
                 Emulator.</button>
             <div class="slideplaceholder" style="margin-top: 38px;margin-left: 67px;font-size: 38px;">The Week Ahead
             </div>
@@ -418,7 +418,7 @@
 </script>
 <script>
       function auto() {
-        if (automatictransition === "true") {
+        if (automatictransition = "true") {
       setTimeout(myFunction, 8000)
       setTimeout(radar, 16000)  
       setTimeout(forecastslide, 28000)
@@ -430,6 +430,10 @@
       document.getElementById("nextslidebutton").style.display = "none"
       document.getElementById("radarbutton").style.display = "none"
       document.getElementById("forecastslidebutton").style.display = "none"
+      document.getElementById("forecastslidebutton1").style.display = "none"
+      document.getElementById("forecastslidebutton2").style.display = "none"
+      document.getElementById("forecastslidebutton3").style.display = "none"
+
 
         } if (automatictransition === "false") {
             document.getElementById("nextslidebutton").style.display = "block"
