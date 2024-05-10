@@ -2,7 +2,7 @@
 Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Weatherscan</a> Project. This project was made by me.
  <h1 align="center">This is the intellistar project! Made by Jesse Hasty.</h1>
  <h1>A big credit to our contributors:</h1>
- <a href="https://github.com/KiernanTheFemboy"><li>KiernanTheFemboy - Idea on The Automatic Radar and Automatic Slides, and the Air Quality Slide.</li></a>
+ <a href="https://github.com/KiernanTheFemboy"><li>KiernanTheFemboy</a> - Idea on The Automatic Radar and Automatic Slides, and the Air Quality Slide.</li>
 <h1>Information</h1>
  <li><b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b></li>
 <li>I recommend you are on Windows 7 or Later.</li>
