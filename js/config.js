@@ -6,7 +6,7 @@ var api_key = `e1f10a1e78da46f5b10a1e78da96f525`;
  var map_key = `pk.eyJ1IjoiaGFzdHl0dWJlIiwiYSI6ImNsa2hkZTh6bzAwazQzZHFyNmF5aTRsZGwifQ.5QJvYIHo0odZ5jCFApV7yw`
 
  // This is to automatically transition the slides. Viewer Requested. 
-var automatictransition = "false"
+var automatictransition = "true"
 
  var lat = "38.8078317"
  var lon = "-76.9899712"
