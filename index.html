@@ -3,7 +3,8 @@
 <meta name="authors" content="Jesse Hasty">
 <meta name="keywords" content="Intellistar, Weather Channel, Local Forecast">
 <title>Intellistar</title>
-<meta charset="UTF-8"> <!-- charset is set to UTF-8 for Japanese and Hebrew character support. -->
+<!-- charset is set to UTF-8 for Japanese and Hebrew character support. -->
+<meta charset="UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Scripts -->
@@ -12,19 +13,21 @@
 <script type="text/javascript" src="./js/alerts.js"></script>
 <script type="text/javascript" src="./js/forecast.js"></script>
 <script type="text/javascript" src="./js/slides.js"></script>
-<script src="./js/time.js"></script>
+<script type="text/javascript" src="./js/time.js"></script>
 <!-- CSS -->
 <link rel="stylesheet" href="./css/intelli.css">
+
 <body>
     <!-- The Current Conditions Section.  -->
     <div class="container">
         <div id="bg">
-        <img style="width: 729px; height: 547px;" src="./images/bg/bg1.png"></div>
+            <img style="width: 729px; height: 547px;" src="./images/bg/bg1.png">
+        </div>
         <!-- Current Conditions Slide -->
         <div id="nextslide" style="position: absolute;">
             <img class="panel" src="./images/panels/cc.png" style="opacity: 89.33%; position: absolute;">
             <div class="slideplaceholder">Now</div>
-            <button id="nextslidebutton" onclick="myFunction()"  style="height: fit-content;">Next Slide</button>
+            <button id="nextslidebutton" onclick="myFunction()" style="height: fit-content;">Next Slide</button>
             <!-- City Name -->
             <div class="city" id="cityn">WASHINGTON</div>
             <div id="icon" class="iconc">
@@ -47,7 +50,8 @@
                 <div class="name"
                     style="margin-top: 107px; display: flex; margin-right: 15px; font-size: 22px; width: fit-content;">
                     PRESSURE</div>
-                <div id="pressure" style="margin-top: 100px;" class="value">30.31 <div id="pressunit" class="small">INCHES</div>S</div>
+                <div id="pressure" style="margin-top: 100px;" class="value">30.31 <div id="pressunit" class="small">
+                        INCHES</div>S</div>
                 <div class="name"
                     style="margin-top: 153px; display: flex; margin-right: 15px; font-size: 22px; width: fit-content;">
                     VISIBILITY</div>
@@ -68,7 +72,8 @@
             </div>
         </div>
         <div id="alertslide" class="alert-slide">
-            <div class="slideplaceholder" style="letter-spacing: 1.6px;width: 660px;margin-top: 40px;margin-left: 46px;">Weather Bulletin</div>
+            <div class="slideplaceholder"
+                style="letter-spacing: 1.6px;width: 660px;margin-top: 40px;margin-left: 46px;">Weather Bulletin</div>
             <button id="radarbutton" style="position: absolute;" onclick="radar()">Next Slide</button>
             <img class="bulletinpanel" src="./images/panels/bulletin.png">
             <div class="alert" id="alerttext">No Alert.</div>
@@ -82,12 +87,15 @@
             <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide()">Next Slide.</button>
             <img class="radarpanel" src="./images/panels/radarpanel.png"></img>
             <div class="slideplaceholder" style="width: 660px; margin-top: 42px;">Regional Radar</div>
-            <div class="rainlegend" id="rain" style="position: absolute; color: #4d6a81; margin-left: 63px; margin-top: 85px; font-size: 21px;">rain</div>
+            <div class="rainlegend" id="rain"
+                style="position: absolute; color: #4d6a81; margin-left: 63px; margin-top: 85px; font-size: 21px;">rain
+            </div>
             <img class="rainimg" src="./images/panels/radar.png">
         </div>
         <div class="almanac" id="almanacslide">
             <div class="almanacpanel">
-                <div class="slideplaceholder" style="margin-top: -52px; margin-left: 12px; font-size: 38px;">Almanac</div>
+                <div class="slideplaceholder" style="margin-top: -52px; margin-left: 12px; font-size: 38px;">Almanac
+                </div>
                 <div class="sunrisesunsettimes">
                     <div class="dayofweek001" id="almanacday0">TUESDAY</div>
                     <div class="dayofweek002" id="almanacday1">WEDNESDAY</div>
@@ -98,7 +106,7 @@
                     <div id="sunrise1" style="margin-left: 333px;" class="sunrisep">8:04 am</div>
                     <div id="sunset1" style="margin-left: 333px;" class="sunsetp">5:26 pm</div>
                 </div>
-                <div class="lowerplaceholder">  
+                <div class="lowerplaceholder">
                     <div class="stationname" id="station"></div>
                     <div class="almanacdays" id="almanacdate">December 25</div>
                     <!-- Left Side Stuff -->
@@ -115,8 +123,8 @@
                     <div class="averagelow" id="avlo">21</div>
                     <div class="recordhiyear" id="maxyear">1893</div>
                     <div class="recordmax" id="rmax">64</div>
-              <div class="recordminy" id="minyear">1883</div>
-               <div class="recordmin" id="rmin">-13</div>
+                    <div class="recordminy" id="minyear">1883</div>
+                    <div class="recordmin" id="rmin">-13</div>
                 </div>
                 <img style="width: 645px; height: 349px" src="./images/panels/almanac.png">
             </div>
@@ -132,7 +140,8 @@
                 <div class="forecast" id="forecast1">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide1()">Next Slide.</button>
+                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide1()">Next
+                    Slide.</button>
             </div>
         </div>
         <div class="forecastcontainer" id="forecastpanel1">
@@ -157,11 +166,13 @@
                 <div class="forecast" id="forecast3">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide3()">Next Slide.</button>
+                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide3()">Next
+                    Slide.</button>
             </div>
         </div>
         <div class="extendedcontainer" id="extendedforecast">
-            <button id="forecastslidebutton" style="position: absolute;" onclick="redirect()">Restart the Emulator.</button>
+            <button id="forecastslidebutton" style="position: absolute;" onclick="redirect()">Restart the
+                Emulator.</button>
             <div class="slideplaceholder" style="margin-top: 38px;margin-left: 67px;font-size: 38px;">The Week Ahead
             </div>
             <div class="citynames">
@@ -227,7 +238,8 @@
                     every one was clean.</marquee><img id="marqueebar" class="scroll" src="./images/ldl/LDLBar.png">
             </div>
             <div id="twciconco" style="position: absolute; display: flex;">
-            <img class="twcimg" id="imageatime" style="position: absolute;" src="./images/twcicons/2005.png"></div>
+                <img class="twcimg" id="imageatime" style="position: absolute;" src="./images/twcicons/2005.png">
+            </div>
             <div id="innertime">
                 <div class="timer" id="time" style="position: absolute; margin-left: 681px;">12:00</div>
                 </img>
@@ -235,23 +247,27 @@
         </div>
     </div>
 </body>
+
 </html>
 <!-- Stuff I could not put into a JS file. -->
 </script>
-<!-- time.js -->   
+<!-- time.js -->
 <script>
 </script>
 <!-- radar.js -->
 <script>
     // Fetch Radar title imagery
     map_img = `https://api.mapbox.com/styles/v1/goldbblazez/ckgc8lzdz4lzh19qt7q9wbbr9/static/${lon},${lat},7/729x546?access_token=${map_key}`
-    radar_url = `https://maps.aerisapi.com/Ok3aWX6hA5NczrIqqEzEz_Jrya0titpdLg7wrKlqqPEafJAbRLsBbMpcRPR5CO/radar/729x546/${lat},${lon},8/latest.png`
+    radar_url = `https://maps.aerisapi.com/wgE96YE3scTQLKjnqiMsv_SVG2gQFV8y9DjKR0BRY9wPoSLvrMrIqF9Lq2IYaY/radar/729x546/${lat},${lon},8/latest.png`
     document.getElementById("mapboxmap").innerHTML = `<img style="position: absolute;" src="${map_img}"></img>`
     document.getElementById('radarimagery').innerHTML = `<img style="position: absolute; background-color: transparent;" src="${radar_url}"></img>`
 
 
 </script>
-<!-- weekdays.js -->   
+<!-- vars.js -->
+<script>
+</script>
+<!-- weekdays.js -->
 <script>
     // Script for weekdays
     const d = new Date();
@@ -262,18 +278,15 @@
     var month = `${d.getMonth() + 1}`
     var day = `${d.getDate()}`
     var year = `${d.getFullYear()}`
+
     // Function for Almanac Weekdays
     const weekdaysfull = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
-    var almanacwkday01 = weekdaysfull[d.getDay()] 
-    var almanacwkday02 = weekdaysfull[d.getDay() + 1] 
-    console.log(month, day)
-    console.log(weekday);
-    console.log(dayofweek);
+    var almanacwkday01 = weekdaysfull[d.getDay()]
+    var almanacwkday02 = weekdaysfull[d.getDay() + 1]
     // Function for Alamanac Day
     const months = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
     var alamacday = d.getDate() + 1
     var almanacm = months[d.getMonth()]
-    console.log(almanacm)
     document.getElementById("almanacdate").innerHTML = `${months[d.getMonth()]} ${d.getDate()}`
     // Section for day names for the extended forecast.
     document.getElementById('ename0').innerHTML = `${weekdays[d.getDay()]}`;
@@ -284,79 +297,66 @@
     document.getElementById('ename5').innerHTML = `${weekdays[d.getDay() + 5]}`;
     document.getElementById('ename6').innerHTML = `${weekdays[d.getDay() + 6]}`;
 </script>
-<!-- suntimes.js -->   
+<!-- icon.js -->
 <script>
-    sunrisesunset()
-    var day1 = d.getDay() + 31
-    const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-31`;
-
-    async function sunrisesunset() {
-        const response = await fetch(solarurl)
-        const data = await response.json()
-        const {results} = data;
-        if (day1 >= 30) {
-       const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-30`;
-    } else {
-        const solarurl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lon}&date_start=${year}-${month}-${day}&date_end=${year}-${month}-${day1}`;
-    }
-        console.log(data)  
-        document.getElementById("sunrise0").innerHTML = `${results[0].sunrise}`
-        document.getElementById("sunset0").innerHTML = `${results[0].sunset}`
-        document.getElementById("sunrise1").innerHTML = `${results[1].sunrise}`
-        document.getElementById("sunset1").innerHTML = `${results[1].sunset}`
-        var timezone = `${results[0].timezone}`
-        console.log(timezone)
-    }
-    sunrisesunset();
-    </script>
-    <!-- icon.js -->
-    <script>
-         changeicon();
- async function changeicon() {
+    changeicon();
+    async function changeicon() {
         var icon = `${twciconstyle}`
-    console.log(icon)
-    document.getElementById('twciconco').innerHTML =  `<img class="twcimg" id="imageatime" style="position: absolute;" src="./images/twcicons/${icon}.png"></div>`;
- }
-changeicon()
-    </script>
-    <!-- history.js -->
-    <script>
-        getAlmanac();
+        document.getElementById('twciconco').innerHTML = `<img class="twcimg" id="imageatime" style="position: absolute;" src="./images/twcicons/${icon}.png"></div>`;
+    }
+    changeicon()
+</script>
+<!-- history.js -->
+<script>
+    // This part is finding yesterday's date
+    d = new Date() - 1
+    month = d.getMonth()
+    day = d.getDate()
+    function todayday() {
+        da = new Date()
+        todayday = d.getDay()
+        todaymonth = d.getMonth()
+    }
+</script>
+<script>
+    getAlmanac();
     const almanacurl = `https://api.weather.com/v3/wx/almanac/daily/5day?geocode=${lat},${lon}&format=json&units=${units}&startDay=${day}&startMonth=${month}&apiKey=e1f10a1e78da46f5b10a1e78da96f525`
-    async function getAlmanac() {  
-     const response = await fetch(almanacurl)
-     const data = await response.json();
-     const {almanacRecordYearMin, almanacRecordYearMax, stationName, temperatureRecordMin, temperatureAverageMax, temperatureAverageMin, temperatureRecordMax} = data;
-     console.log(data)
-     // Almanac Weekdays
-    document.getElementById('almanacday0').innerHTML = `${almanacwkday01}`
-    document.getElementById("almanacday1").innerHTML = `${almanacwkday02}`
-     // Yesterday's Temps
-     document.getElementById('yesthi').innerHTML = `--`
-     document.getElementById('yestlo').innerHTML = `--`
-     // Today's Average
-      document.getElementById('avhi').innerHTML = `${temperatureAverageMax[0]}`
-      document.getElementById('avlo').innerHTML = `${temperatureAverageMin[0]}`
-     // Records
-     document.getElementById('rmin').innerHTML = `${temperatureRecordMin[0]}`
-     document.getElementById("rmax").innerHTML = `${temperatureRecordMax[0]}`
-     // Record Years
-     document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
-     document.getElementById("minyear").innerHTML = `${almanacRecordYearMin[0]}`;
-     document.getElementById("station").innerHTML = `${almanacstationname}`
+    async function getAlmanac() {
+        const response = await fetch(almanacurl)
+        const data = await response.json();
+        const { almanacRecordYearMin, almanacRecordYearMax, stationName, temperatureRecordMin, temperatureAverageMax, temperatureAverageMin, temperatureRecordMax } = data;
+        console.log(data)
+        // Almanac Weekdays
+        document.getElementById('almanacday0').innerHTML = `${almanacwkday01}`
+        document.getElementById("almanacday1").innerHTML = `${almanacwkday02}`
+        // Today's Average
+        document.getElementById('avhi').innerHTML = `${temperatureAverageMax[0]}`
+        document.getElementById('avlo').innerHTML = `${temperatureAverageMin[0]}`
+        // Records
+        document.getElementById('rmin').innerHTML = `${temperatureRecordMin[0]}`
+        document.getElementById("rmax").innerHTML = `${temperatureRecordMax[0]}`
+        // Record Years
+        // Function almanacstationname
+        document.getElementById("station")
+        if (almanacstationname !== "") {
+            document.getElementById("station").innerHTML = `${almanacstationname}`
+        } if (almanacstationname === "") {
+            station.innerHTML = `${stationName[0]}`
+        }
+        document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
+        document.getElementById("minyear").innerHTML = `${almanacRecordYearMin[0]}`;
     }
     getAlmanac();
-    </script>
-    <!-- almanac2.js -->
-    <script>
-            // Function for Yesterday's high and low.
+</script>
+<!-- almanac2.js -->
+<script>
+    // Function for Yesterday's high and low.
     yesterdaytemps();
     async function yesterdaytemps() {
         const historyurl = `https://api.weather.com/v3/wx/conditions/historical/dailysummary/30day?geocode=${lat},${lon}&language=${lang}-${country}&format=json&units=${units}&apiKey=${api_key}`
         const response = await fetch(historyurl);
         const data = await response.json();
-        const {temperatureMax, temperatureMin} = data;
-        console.log(data)
+        const { temperatureMax, temperatureMin } = data;
 
         document.getElementById("yesthi").innerHTML = `${temperatureMax[0]}`
         document.getElementById("yestlo").innerHTML = `${temperatureMin[0]}`
@@ -369,30 +369,26 @@ changeicon()
         document.getElementById('bg').innerHTML = `<img style="width: 729px; height: 547px;" src="./images/bg/${bg}.${bgformat}">`
     }
     yesterdaytemps();
-    </script>
+</script>
 <script>
 </script>
 <!-- ldltime.js -->
 <script>
-function getTime() {
-    let d = new Date();
-    var hour = d.getHours();
-    var minute = d.getMinutes()
-    console.log(hour + ':' + minute)
-    if (hour >= 13) {
-        var hour = `${hour - 12}`
-    }  if (hour == 0) {
-        var hour = `${hour + 12}`
+    function getTime() {
+        let d = new Date();
+        var hour = d.getHours();
+        var minute = d.getMinutes()
+        if (hour >= 13) {
+            var hour = `${hour - 12}`
+        } if (hour == 0) {
+            var hour = `${hour + 12}`
+        }
+        if (minute <= 9) {
+            var minute = `0${minute}`
+        };
+        document.getElementById("time").innerHTML = `${hour}:${minute}`
+
     }
-    if (minute <= 9) {
-        var minute = `0${minute}`
-    };
-    document.getElementById("time").innerHTML = `${hour}:${minute}`
-
-}
-getTime()
-setInterval(getTime, 5000)
-</script>
-<script>
-
+    getTime()
+    setInterval(getTime, 5000)
 </script>
