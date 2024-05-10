@@ -1,3 +1,4 @@
+
 <html>
 <!-- Meta Tags and other stuff. -->
 <meta name="authors" content="Jesse Hasty">
@@ -335,6 +336,18 @@
         // Records
         document.getElementById('rmin').innerHTML = `${temperatureRecordMin[0]}`
         document.getElementById("rmax").innerHTML = `${temperatureRecordMax[0]}`
+
+        if (temperatureRecordMax[0] === null) {
+            document.getElementById("rmax").innerHTML = `--`
+        } else {
+            document.getElementById("rmax").innerHTML = `${temperatureRecordMax[0]}`
+        } 
+
+        if (temperatureRecordMin[0] === null) {
+            document.getElementById('rmin').innerHTML = `--`
+        } else {
+            document.getElementById('rmin').innerHTML = `${temperatureRecordMin[0]}`
+        }
         // Record Years
         // Function almanacstationname
         document.getElementById("station")
@@ -345,6 +358,17 @@
         }
         document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
         document.getElementById("minyear").innerHTML = `${almanacRecordYearMin[0]}`;
+
+        if (almanacRecordYearMax[0] === null) {
+            document.getElementById('maxyear').innerHTML = `----`
+        } else {
+            document.getElementById('maxyear').innerHTML = `${almanacRecordYearMax[0]}`
+        }
+        if (almanacRecordYearMin[0] === null) {
+            document.getElementById('minyear').innerHTML = `----`
+        } else {
+            document.getElementById('minyear').innerHTML = `${almanacRecordYearMin[0]}`
+        }
     }
     getAlmanac();
 </script>
@@ -391,4 +415,28 @@
     }
     getTime()
     setInterval(getTime, 5000)
+</script>
+<script>
+      function auto() {
+        if (automatictransition === "true") {
+      setTimeout(myFunction, 8000)
+      setTimeout(radar, 16000)  
+      setTimeout(forecastslide, 28000)
+      setTimeout(forecastslidee, 36000)
+      setTimeout(forecastslide1, 42000)
+      setTimeout(forecastslide2, 50000)
+      setTimeout(forecastslide3, 58000) 
+
+      document.getElementById("nextslidebutton").style.display = "none"
+      document.getElementById("radarbutton").style.display = "none"
+      document.getElementById("forecastslidebutton").style.display = "none"
+
+        } if (automatictransition === "false") {
+            document.getElementById("nextslidebutton").style.display = "block"
+      document.getElementById("radarbutton").style.display = "block"
+      document.getElementById("forecastslidebutton").style.display = "block"
+        }
+  }
+  auto()
+
 </script>
