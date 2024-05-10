@@ -8,6 +8,12 @@ ReturnWeather()
 console.log(data);
 
   document.getElementById('cityn').innerHTML = `${locationn}`;
+  function setvars() {
+    if (locationn === "") {
+     document.getElementById("cityn").innerHTML = `${observation.obs_name}`
+    } 
+     }
+     setvars()
   document.getElementById('condition').innerHTML = `${observation.wx_phrase}`;
   document.getElementById('temp').textContent = observation.temp;
   document.getElementById("humidity").innerHTML = `${observation.rh}%`
