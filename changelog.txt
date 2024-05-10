@@ -19,12 +19,17 @@ V1.9.4 (Build 1) Inital Release: April 26th 2024
 Fixed an Error where the alert on the LDL bar would not show up
 Removed Music Directory
 A couple of text re-alignments
+V1.9.5 (Build 1) Intital Release: May 10th 2024
+Automatic Transations (You can disable this in the configuration. Intellistar/js/config.js)
+Animated Radar 
+Updated the Alert Phrase
+Radar Now Avaliable in countries asiding from the US.
+
 
 -----
 To Come:
 Observations and Radar/Satalite Slide
 Ideas:
 Extra Forecast Slide
-Problems
-Some Conditions on the Forecast Slide aren't in the correct spot.
+Known Problems
 Radar may overlap cities (I will fix this problem with a city overlay.)
