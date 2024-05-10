@@ -5,9 +5,11 @@ var api_key = `e1f10a1e78da46f5b10a1e78da96f525`;
 // Input your mapbox key.
  var map_key = `pk.eyJ1IjoiaGFzdHl0dWJlIiwiYSI6ImNsa2hkZTh6bzAwazQzZHFyNmF5aTRsZGwifQ.5QJvYIHo0odZ5jCFApV7yw`
 
+ // This is to automatically transition the slides. Viewer Requested. 
+var automatictransition = "false"
 
- var lat = "38.44"
- var lon = "-75.43"
+ var lat = "38.8078317"
+ var lon = "-76.9899712"
  var icons = "2010"; // Types are 2007, 2010, and XL
  var bg = "bg1" // Insert your custom background. bg1 is the default. Put it in images/bg folder
  var bgformat = "png" // If your image is other than png, set the image file type. Do not include a dot before the file type.
@@ -16,8 +18,8 @@ var api_key = `e1f10a1e78da46f5b10a1e78da96f525`;
 // If your icons is 2010, change to png.
 // No period before the file type. Otherwise it gives it out as 26..png/gif
 var filet = `png` // gif or png. No period included
-var locationn =  "" // Your Location. Leave Blank for autolocation.
-var forecastlocation = `Salisbury` // The Location that appears on the forecast. You can do ${locationn} for the city name above
+var locationn =  "Downtown" // Your Location. Leave Blank for autolocation.
+var forecastlocation = `Washington` // The Location that appears on the forecast. You can do ${locationn} for the city name above
 var almanacstationname = "" /* The Name that appears on the Almanac Slide. Leave blank if 
 you want to automatically set the name of the station */
 var units = "e" // The displayed. e is imperial, m is metric, h is hybrid, s is (the) kelvin. Default is e.
