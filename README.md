@@ -1,7 +1,7 @@
 # Intellistar
 Inspired by buffbears/weatherscan. This project was made by me.
- <h1 align="center">This is the intellistar project! Made by Jesse Hasty.•</h1>
- <b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b>
+ <h1 align="center">This is the intellistar project! Made by Jesse Hasty.</h1>
+ <li><b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b></li>
 <h1>Information</h1>
 <li>I recommend you are on Windows 7 or Later.</li>
 <li>This Project was started on February 20th 2024</li>
