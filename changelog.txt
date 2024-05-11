@@ -24,7 +24,10 @@ Automatic Transations (You can disable this in the configuration. Intellistar/js
 Animated Radar 
 Updated the Alert Phrase
 Radar Now Avaliable in countries asiding from the US.
-
+V1.9.5 (Build 2) Initial Release: May 11th 2024
+Fixed Issues with Slide Transition
+Fixed Issues with Animated Radar
+Fixed Alert Slide Font not working
 
 -----
 To Come:
