@@ -60,6 +60,13 @@ function myFunction() {
   setTimeout(frame4, 2800)
   setTimeout(frame5, 3100)
   setTimeout(frame6, 3400)
+  setTimeout(frame0, 3600)
+  setTimeout(frame1, 3800)
+  setTimeout(frame2, 4000)
+  setTimeout(frame3, 4200)
+  setTimeout(frame4, 4400)
+  setTimeout(frame5, 4600)
+  setTimeout(frame6, )
   }
   radar()
 function forecastslide() {

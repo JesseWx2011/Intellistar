@@ -12,7 +12,7 @@ FetchAlerts();
   starttime = new Date(starttimeiso).toLocaleString("en-US", {timeStyle: "short" });
   endtime = new Date(endtimeiso).toLocaleString("en-US", {timeStyle: "short" });
   console.log(starttime)
-  var alert = `${features[0].properties.event}`
+  var alert = features[0].properties.event
   console.log(alert)
   // Script Implemented on March 6th 2024.
   if (features[0].properties.severity = "Extreme") {
