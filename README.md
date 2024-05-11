@@ -1,6 +1,6 @@
 # Intellistar
 Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Weatherscan</a> Project. This project was made by me.
- <h1 align="center">This is the intellistar project! Made by Jesse Hasty.</h1>
+ <h1 align="center">This is the Intellistar project! Made by Jesse Hasty.</h1>
  <h1>A big credit to our contributors:</h1>
 <li> <a href="https://github.com/KiernanTheFemboy">KiernanTheFemboy</a> - Idea on The Automatic Radar and Automatic Slides, and the Air Quality Slide.</li>
 <h1>Information</h1>
