@@ -1,4 +1,3 @@
-
 <html>
 <!-- Meta Tags and other stuff. -->
 <meta name="authors" content="Jesse Hasty">
@@ -19,6 +18,7 @@
 <link rel="stylesheet" href="./css/intelli.css">
 
 <body>
+    
     <!-- The Current Conditions Section.  -->
     <div class="container">
         <div id="bg">
@@ -30,7 +30,7 @@
             <div class="slideplaceholder">Now</div>
             <button id="nextslidebutton" onclick="myFunction()" style="height: fit-content;">Next Slide</button>
             <!-- City Name -->
-            <div class="city" id="cityn">WASHINGTON</div>
+            <div class="city" id="cityn">Washington</div>
             <div id="icon" class="iconc">
                 <img src="./images/icons/2010/26.png">
             </div>
@@ -39,7 +39,7 @@
             <div class="temperature" id="temp">28</div>
             <!-- Right Side -->
             <!-- Humidity -->
-            <div class="rightcontainer">
+            <div class="rightcontainer" id="rightcontainer">
                 <div class="name">HUMIDITY</div>
                 <div id="humidity" class="value">83%</div>
                 <!-- Dew Point -->
@@ -418,7 +418,7 @@
 </script>
 <script>
       function auto() {
-        if (automatictransition = "false") {
+        if (automatictransition === "false") {
       document.getElementById("nextslidebutton").style.display = "block"
       document.getElementById("radarbutton").style.display = "block"
       document.getElementById("forecastslidebutton").style.display = "block"
@@ -426,7 +426,7 @@
       document.getElementById("forecastslidebutton2").style.display = "block"
       document.getElementById("forecastslidebutton3").style.display = "block"
 
-        }  else {
+        }  if (automatictransition === "true") {
       setTimeout(myFunction, 8000)
       setTimeout(radar, 16000)  
       setTimeout(forecastslide, 28000)
@@ -441,6 +441,9 @@
       document.getElementById("forecastslidebutton1").style.display = "none"
       document.getElementById("forecastslidebutton2").style.display = "none"
       document.getElementById("forecastslidebutton3").style.display = "none"
+
+      document.getElementById("rightcontainer").style.marginTop = "120px"
+      document.getElementById("icon").style.marginTop = "130px"
 }
   }
   auto()
