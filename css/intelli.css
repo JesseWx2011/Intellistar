@@ -109,7 +109,9 @@ body {
     margin-left: 110px;
     margin-bottom: 250px;
 }
-
+.alert {
+    font-family: Interstate-Bold;
+}
 .alertmarquee {
     position: absolute;
     color: black;
