@@ -399,22 +399,23 @@
 <!-- ldltime.js -->
 <script>
     function getTime() {
-        let d = new Date();
-        var hour = d.getHours();
-        var minute = d.getMinutes()
-        if (hour >= 13) {
-            var hour = `${hour - 12}`
-        } if (hour == 0) {
-            var hour = `${hour + 12}`
-        }
-        if (minute <= 9) {
-            var minute = `0${minute}`
-        };
-        document.getElementById("time").innerHTML = `${hour}:${minute}`
+       console.log(timezone)
+            let d = new Date()
+            var hour = new Date().getHours().toLocaleString("en-US", {timeStyle: "short", timeZone: `${timezone}`})
+            var minute = d.getMinutes().toLocaleString("en-US", {timeStyle: "short", timeZone: `${timezone}`})
+            if (hour >= 13) {
+                var hour = `${hour - 12}`
+            } if (hour == 0) {
+                var hour = `${hour + 12}`
+            }
+            if (minute <= 9) {
+                var minute = `0${minute}`
+            };
+            document.getElementById("time").innerHTML = `${hour}:${minute}`
 
     }
     getTime()
-    setInterval(getTime, 5000)
+    setInterval(getTime, 1000)
 </script>
 <script>
       function auto() {
@@ -425,6 +426,7 @@
       document.getElementById("forecastslidebutton1").style.display = "block"
       document.getElementById("forecastslidebutton2").style.display = "block"
       document.getElementById("forecastslidebutton3").style.display = "block"
+
 
         }  if (automatictransition === "true") {
       setTimeout(myFunction, 8000)
@@ -444,6 +446,7 @@
 
       document.getElementById("rightcontainer").style.marginTop = "120px"
       document.getElementById("icon").style.marginTop = "130px"
+      document.getElementById("condition").style.marginTop = "273px"
 }
   }
   auto()
