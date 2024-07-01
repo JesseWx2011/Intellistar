@@ -7,7 +7,7 @@ Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Wea
  <li><b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b></li>
 <li>I recommend you are on Windows 7 or Later.</li>
 <li>This Project was started on February 20th 2024</li>
-<li>2010 Icons are from buffbears/Weatherscan (The respitory that inspired this project.)</li>
+<li>2010 Icons are from <a href="https://github.com/buffbears/Weatherscan">buffbears/Weatherscan</a> (The respitory that inspired this project.)</li>
 <h1>Instructions:</h1>
 <h2>1. Download the zip file. Click code, then download as zip file. It will most likely appear in your downloads folder</h2>
 <img src="./setup/setup0.png">
