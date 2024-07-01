@@ -20,7 +20,7 @@ Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Wea
  <h2>4. Head to config.js, you will need your latitude and longitude, and set all the other stuff in the Configuration. Includes music, language setting, and your custom marquee..</h2>
  <img src="./setup/setup4.png">
  <h2>5. Run index.html, and click the "Next Slide" button for the next segment.</h2>
-  
+    <p>* After v1.9.5 (Build 1), automatic transitions have been added.</p>
   <h3 align="center">Screenshots :)</h3>
   <div align="center">
    <img src="./screenshots/00.png">
