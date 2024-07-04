@@ -31,6 +31,8 @@ Fixed Alert Slide Font not working
 v1.9.7 Initial Release: June 24th 2024 - Update Level: Minor
 Fixed the font on the Alerts Slide
 Fixed Time on LDL bar
+v1.9.7 Build 2 Initial Release: July 4th 2024 - Update Level: Minor
+Fixed Gusts being labeled as "undefined" 
 -----
 To Come:
 Observations and Radar/Satalite Slide
