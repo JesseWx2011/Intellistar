@@ -14,7 +14,7 @@ console.log(data);
     } 
      }
 
-     gust = observation?.gust 
+     gust = observation.gust 
 
       if (gusts === null) {
          gusts = "None"
