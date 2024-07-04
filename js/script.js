@@ -13,6 +13,12 @@ console.log(data);
      document.getElementById("cityn").innerHTML = `${observation.obs_name}`
     } 
      }
+
+     gust = observation?.gust 
+
+      if (gusts === null) {
+         gusts = "None"
+      }
      setvars()
   document.getElementById('condition').innerHTML = `${observation.wx_phrase}`;
   document.getElementById('temp').textContent = observation.temp;
