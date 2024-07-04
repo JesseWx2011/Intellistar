@@ -5,7 +5,7 @@ Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Wea
 <li> <a href="https://github.com/KiernanTheFemboy">KiernanTheFemboy</a> - Idea on The Automatic Radar and Automatic Slides, and the Air Quality Slide.</li>
 <h1>Information</h1>
  <li><b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b></li>
-<li>I recommend you are on Windows 7 or Later.</li>
+<li>An OS of Windows 7 or Later, or MacOS Yosemite or Later</li>
 <li>This Project was started on February 20th 2024</li>
 <li>2010 Icons are from <a href="https://github.com/buffbears/Weatherscan">buffbears/Weatherscan</a> (The respitory that inspired this project.)</li>
 <h1>Instructions:</h1>
