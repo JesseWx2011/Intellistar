@@ -14,7 +14,7 @@ console.log(data);
     } 
      }
 
-     gust = observation.gust 
+     gusts = observation.gust 
 
       if (gusts === null) {
          gusts = "None"
@@ -25,7 +25,7 @@ console.log(data);
   document.getElementById("humidity").innerHTML = `${observation.rh}%`
   document.getElementById("dewpoint").innerHTML = `${observation.dewPt}&deg;  `
   document.getElementById("wind").innerHTML = `${observation.wdir_cardinal} ${observation.wspd}`;
-  document.getElementById('gusts').innerHTML = `${observation.gust}`
+  document.getElementById('gusts').innerHTML = `${gusts}`
   document.getElementById('feelslike').innerHTML = `${observation.feels_like}&deg;`
   // Set marquee
   document.getElementById('scrollingmarquee').innerHTML = `${marquee_message}`
