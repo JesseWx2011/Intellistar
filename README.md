@@ -21,13 +21,3 @@ Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Wea
  <img src="./setup/setup4.png">
  <h2>5. Run index.html, and click the "Next Slide" button for the next segment.</h2>
     <p>* After v1.9.5 (Build 1), automatic transitions have been added.</p>
-  <h3 align="center">Screenshots :)</h3>
-  <div align="center">
-   <img src="./screenshots/00.png">
-    <img src="./screenshots/1.png">
-   <img src="./screenshots/2.png">
-   <img src="./screenshots/3.png">
-   <img src="./screenshots/4.png">
-   <img src="./screenshots/5.png">
-   <p>Note: Screenshots taken as of Version 1.1.5</p>
-  </div>
