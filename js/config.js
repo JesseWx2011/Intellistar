@@ -32,7 +32,7 @@ var units = "e" // The displayed. e is imperial, m is metric, h is hybrid, s is 
 // This is the message that aUnits ppears on the LDL Bar.
 var marquee_message = ""
 
-// The Music Configuration Removed was on March 4th 2024.
+// The Music Configuration was Removed on March 4th 2024.
 
  // Alert Configuration
  var country = "US" // Two Letter Country Code. Some Countries are not supported. https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-alert-details
