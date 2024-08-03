@@ -7,12 +7,12 @@ var api_key = `e1f10a1e78da46f5b10a1e78da96f525`;
  var map_key = `pk.eyJ1IjoiaGFzdHl0dWJlIiwiYSI6ImNsa2hkZTh6bzAwazQzZHFyNmF5aTRsZGwifQ.5QJvYIHo0odZ5jCFApV7yw`
 
  // This is to automatically transition the slides. Viewer Requested. 
- automatictransition = "false"
+ automatictransition = "true"
 
-var timezone = "America/Chicago"
+var timezone = "America/New_York"
 // Location Configuration
- var lat = "27.8036155" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
- var lon = "-97.3989739" // Longitude.
+ var lat = "28.4831649" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
+ var lon = "-82.53698" // Longitude.
  // Icon Configuration
  var icons = "XL"; // Types are 2007, 2010, and XL
  var filet = `png` // gif or png. No period included
@@ -24,13 +24,13 @@ var timezone = "America/Chicago"
 // If your icons is 2007, change to gif.
 // If your icons is 2010, change to png.
 // No period before the file type. Otherwise it gives it out as 26..png/gif
-var locationn =  "Corpus Christi" // Your Location. Leave Blank for autolocation.
-var forecastlocation = `Corpus Christi` // The Location that appears on the forecast. You can do ${locationn} for the city name above
+var locationn =  "Spring Hill" // Your Location. Leave Blank for autolocation.
+var forecastlocation = `Hernando County` // The Location that appears on the forecast. You can do ${locationn} for the city name above
 var almanacstationname = "" /* The Name that appears on the Almanac Slide. Leave blank if 
 you want to automatically set the name of the station */
 var units = "e" // The displayed. e is imperial, m is metric, h is hybrid, s is (the) kelvin. Default is e.
 // This is the message that aUnits ppears on the LDL Bar.
-var marquee_message = ""
+var marquee_message = "Tropical Storm Debby is approaching as of August 3rd, 2024. I wonder if I will even update this. Stay safe Y'all!"
 
 // The Music Configuration was Removed on March 4th 2024.
 
