@@ -24,11 +24,11 @@ body {
     background-color: black;
     margin-left: 250px;
     align-content: center;
+justify-content: center;
     font-family: Interstate-Bold;
 }
 
 .container {
-    margin-left: 110px;
     display: flex;
     flex-wrap: wrap;
     object-fit: cover;
@@ -106,7 +106,6 @@ body {
 
 .innerldlimg {
     position: absolute;
-    margin-left: 110px;
     margin-bottom: 250px;
 }
 .alert {
@@ -125,13 +124,15 @@ body {
     position: absolute;
     width: 67px;
     height: 67px;
-    margin-left: 732px;
+    margin-left: 622px;
     margin-top: 6px;
 }
 
 .timer {
-    margin-left: 1024px;
-    margin-top: 54px;
+    position: absolute;
+    margin-left: 692px;
+    text-align: right;
+    margin-top: 53px;
 }
 
 .marquee {
