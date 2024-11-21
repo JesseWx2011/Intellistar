@@ -33,10 +33,7 @@ Fixed the font on the Alerts Slide
 Fixed Time on LDL bar
 v1.9.7 Build 2 Initial Release: July 4th 2024 - Update Level: Minor
 Fixed Gusts being labeled as "undefined" 
------
-To Come:
-Observations and Radar/Satalite Slide
-Ideas:
-Extra Forecast Slide
-Known Problems
-Radar may overlap cities (I will fix this problem with a city overlay.)
+v1.9.8 Build 1 Inital Release: November 21st 2024 - Update Level: Moderate
+Fixed Radar Images and Map Not Showing
+Automatic Reloads once the simulation is finished
+Scroll will show an error if there is one.
