@@ -86,11 +86,14 @@
             <div id="mapboxmap"></div>
             <div class="mosaicthing" id="radarimagery"></div>
             <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide()">Next Slide.</button>
-            <img class="radarpanel" src="./images/panels/radarpanel.png"></img>
+            <img class="radarpanel" src="./images/panels/radarpanel.png">
+            <img class="radarpanel" style="margin-left: 282px;width: 83px;height: 11px;margin-top: 89px;" src="./images/panels/mix.png">
+            <img class="radarpanel" style="width: 83px;height: 11px;margin-top: 89px;margin-left: 430px;" src="./images/panels/snow.png">
+
             <div class="slideplaceholder" style="width: 660px; margin-top: 42px;">Regional Radar</div>
-            <div class="rainlegend" id="rain"
-                style="position: absolute; color: #4d6a81; margin-left: 63px; margin-top: 85px; font-size: 21px;">rain
-            </div>
+            <div class="rainlegend" id="rain">rain</div>
+            <div class="rainlegend" style="margin-left: 199px;" id="mix">mix/ice</div>
+            <div class="rainlegend" style="margin-left: 370px;" id="snow">snow</div>
             <img class="rainimg" src="./images/panels/radar.png">
         </div>
         <div class="almanac" id="almanacslide">
@@ -129,7 +132,7 @@
                 </div>
                 <img style="width: 645px; height: 349px" src="./images/panels/almanac.png">
             </div>
-            <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslidee()">Next Slide.</button>
+            <button id="forecastslidebutton1" style="position: absolute;" onclick="forecastslidee()">Next Slide.</button>
         </div>
         <div class="forecastcontainer" id="forecastpanel">
             <div class="forecastpanel">
@@ -141,7 +144,7 @@
                 <div class="forecast" id="forecast1">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide1()">Next
+                <button id="forecastslidebutton2" style="position: absolute;" onclick="forecastslide1()">Next
                     Slide.</button>
             </div>
         </div>
@@ -154,7 +157,7 @@
                 <div class="forecast" id="forecast2">Sunny. </div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton1" style="position: absolute;" onclick="forecastslide2()">Next
+                <button id="forecastslidebutton3" style="position: absolute;" onclick="forecastslide2()">Next
                     Slide.</button>
             </div>
         </div>
@@ -167,12 +170,12 @@
                 <div class="forecast" id="forecast3">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
                 <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton2" style="position: absolute;" onclick="forecastslide3()">Next
+                <button id="forecastslidebutton4" style="position: absolute;" onclick="forecastslide3()">Next
                     Slide.</button>
             </div>
         </div>
         <div class="extendedcontainer" id="extendedforecast">
-            <button id="forecastslidebutton3" style="position: absolute;" onclick="redirect()">Restart the
+            <button id="forecastslidebutto4" style="position: absolute;" onclick="redirect()">Restart the
                 Emulator.</button>
             <div class="slideplaceholder" style="margin-top: 38px;margin-left: 67px;font-size: 38px;">The Week Ahead
             </div>
@@ -426,9 +429,10 @@
       document.getElementById("forecastslidebutton1").style.display = "block"
       document.getElementById("forecastslidebutton2").style.display = "block"
       document.getElementById("forecastslidebutton3").style.display = "block"
+      document.getElementById("forecastslidebutton4").style.display = "block"
 
 
-        }  if (automatictransition === "true") {
+        } else {
       setTimeout(myFunction, 8000)
       setTimeout(radar, 16000)  
       setTimeout(forecastslide, 28000)
@@ -444,6 +448,8 @@
       document.getElementById("forecastslidebutton1").style.display = "none"
       document.getElementById("forecastslidebutton2").style.display = "none"
       document.getElementById("forecastslidebutton3").style.display = "none"
+      document.getElementById("forecastslidebutton4").style.display = "none"
+
 
       document.getElementById("rightcontainer").style.marginTop = "120px"
       document.getElementById("icon").style.marginTop = "130px"

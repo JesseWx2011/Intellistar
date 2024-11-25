@@ -83,7 +83,7 @@ function forecastslide() {
   }
   function forecastslide2() {
       document.getElementById('forecastpanel1').style.display = "none"
-      document.getElementById('forecastpanel2').style.display = "block"
+      document.getElementById('forecastpanel2').style.display = "block"   
   }
   function forecastslide3() {
       document.getElementById('forecastpanel2').style.display = "none";

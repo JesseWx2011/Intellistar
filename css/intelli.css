@@ -1,4 +1,20 @@
-
+/* Animations */
+@keyframes ccin {
+    0% {
+        opacity: 13.3333%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+} 
 /* These are the imported fonts. */
 @font-face {
     font-family: FrutigerBlack;
@@ -35,6 +51,7 @@ justify-content: center;
 }
 
 .panel {
+    animation: ccin 0.33333333s;
     margin-top: 90px;
     margin-left: 51px;
     width: 637px;
@@ -42,12 +59,14 @@ justify-content: center;
 }
 
 .slideplaceholder {
+    animation: ccin 0.33333333s;
     display: flex;
     color: white;
     position: absolute;
     margin-top: 45px;
     font-size: 36;
     margin-left: 60px;
+    font-family: 'Interstate-Bold', sans-serif;
 }
 
 .city {
@@ -109,6 +128,7 @@ justify-content: center;
     margin-bottom: 250px;
 }
 .alert {
+    animation: ccin 0.33333333s;
     font-family: Interstate-Bold;
 }
 .alertmarquee {
@@ -214,6 +234,7 @@ justify-content: center;
 }
 
 .forecast {
+    animation: ccin 0.8s;
     position: absolute;
     word-spacing: -4px;
     margin-left: 8px;
@@ -499,10 +520,11 @@ justify-content: center;
     position: absolute;
     color: #4d6a81;
     margin-left: 63px;
-    margin-top: 85px;
+    margin-top: 83px;
     font-size: 21px;
 }
 .alert-slide {
+    font-family: 'Interstate';
     display: none;
     position: absolute;
 }
@@ -523,6 +545,7 @@ justify-content: center;
     margin-left: 41px;
 }
 .nwstextbulletin {
+    font-family: 'Interstate-Bold';
     position: absolute;
     color: white;
     text-transform: uppercase;
@@ -533,7 +556,7 @@ justify-content: center;
 }
 .alert {
     position: absolute;
-    font-family: Interstate;
+    font-family: Interstate-Bold;
     width: 608px;
     font-size: 29px;
     line-height: 37px;

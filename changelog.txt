@@ -37,3 +37,8 @@ v1.9.8 Build 1 Inital Release: November 21st 2024 - Update Level: Moderate
 Fixed Radar Images and Map Not Showing
 Automatic Reloads once the simulation is finished
 Scroll will show an error if there is one.
+v1.9.8 Build 2 Initial Release: November 25th 2024 - Update Level: Moderate
+Added extra legends to the radar panel Slide
+Fixed Font not working (Yet Again) on the Alert Slide
+Fixed a bug where the buttons kept showing even with automatic transition on.
+Modified the configuration. (No new features though.)
