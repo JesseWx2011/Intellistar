@@ -1,8 +1,9 @@
 # Intellistar
 Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Weatherscan</a> Project. This project was made by me.
- <h1 align="center">This is the Intellistar project! Made by Jesse Hasty.</h1>
+ <h1 align="center">This is the Intellistar project!</h1>
  <h1>A big credit to our contributors:</h1>
-<li> <a href="https://github.com/KiernanTheFemboy">KiernanTheFemboy</a> - Idea on The Automatic Radar and Automatic Slides, and the Air Quality Slide.</li>
+<li> <a href="https://github.com/KiernanTheFemboy">KiernanTheFemboy</a> - Idea on Looping Radar and Automatic Slide Transition.</li>
+<li> <a href="https://github.com/BennyF25">BennyF25</a> - Idea on restart after the emulator reaches the last slide. </li>
 <h1>Information</h1>
  <li><b>Head over to <a href="https://github.com/JesseWx2011/Intellistar/blob/master/changelog.txt">The Changelog </a>for updates.</b></li>
 <li>An Operating System of Windows 7 or Later, or MacOS Yosemite or Later</li>
