@@ -15,8 +15,8 @@ var timezone = "America/Chicago"
 
 // Location Configuration
 
-var lat = "39.7818396" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
- var lon = "-89.6498731" // Longitude.
+var lat = "47.9266252" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
+ var lon = "-97.046484" // Longitude.
 
 
  // Icon Configuration
@@ -36,8 +36,8 @@ var lat = "39.7818396" // Latitude. You can head over to www.google.com/maps/ an
  */
 
         // Misc Configuration
-var locationn =  "Springfield" // Your Location. Leave Blank for autolocation.
-var forecastlocation = `Springfield Downtown` // The Location that appears on the forecast. You can do ${locationn} for the city name above
+var locationn =  "Grand Forks" // Your Location. Leave Blank for autolocation.
+var forecastlocation = `Grand Forks Downtown` // The Location that appears on the forecast. You can do ${locationn} for the city name above
 var almanacstationname = "" /* The Name that appears on the Almanac Slide. Leave blank if 
 you want to automatically set the name of the station */
 var units = "e" // The displayed. e is imperial, m is metric, h is hybrid, s is (the) kelvin. Default is e.
