@@ -36,8 +36,8 @@ var lat = "30.4213354" // Latitude. You can head over to www.google.com/maps/ an
  */
 
         // Misc Configuration
-var locationn =  "Grand Forks" // Your Location. Leave Blank for autolocation.
-var forecastlocation = `Grand Forks Downtown` // The Location that appears on the forecast. You can do ${locationn} for the city name above
+var locationn =  "Pensacola" // Your Location. Leave Blank for autolocation.
+var forecastlocation = `Pensacola Downtown` // The Location that appears on the forecast. You can do ${locationn} for the city name above
 var almanacstationname = "" /* The Name that appears on the Almanac Slide. Leave blank if 
 you want to automatically set the name of the station */
 var units = "e" // The displayed. e is imperial, m is metric, h is hybrid, s is (the) kelvin. Default is e.
