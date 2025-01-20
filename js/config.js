@@ -15,8 +15,8 @@ var timezone = "America/Chicago"
 
 // Location Configuration
 
-var lat = "47.9266252" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
- var lon = "-97.046484" // Longitude.
+var lat = "30.4213354" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
+ var lon = "-87.2169984" // Longitude.
 
 
  // Icon Configuration
@@ -42,7 +42,7 @@ var almanacstationname = "" /* The Name that appears on the Almanac Slide. Leave
 you want to automatically set the name of the station */
 var units = "e" // The displayed. e is imperial, m is metric, h is hybrid, s is (the) kelvin. Default is e.
 // This is the message that aUnits ppears on the LDL Bar.
-var marquee_message = "COUNTDOWN TO CHRISTMAS: It is only a matter of time before Christmas Day, xmasclock.com has a festive countdown to track the time until Christmas Day! Ready to get festive? Visit www.xmasclock.com!"
+var marquee_message = "Ah yeahh, let's hope it snow's in Pensacola lol"
 
 
  var country = "US" // Two Letter Country Code. Some Countries are not supported. https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-alert-details
