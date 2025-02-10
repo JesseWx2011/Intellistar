@@ -1,4 +1,5 @@
 # Intellistar
+<h1>Note: Personal Life & Issues has been to blame for the lack of updates. </h1>
 Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Weatherscan</a> Project. This project was made by me.
  <h1 align="center">This is the Intellistar project!</h1>
  <h1>A big credit to our contributors:</h1>
