@@ -1,5 +1,5 @@
 # Intellistar
-<h1>May 3rd 2025: I'm going through an extremely difficult season in my life right now. I may not be able to update the project for quite some time. </h1>
+<h1>May 3rd 2025: Life hasn't been easy for me, I've been focusing more on my walk with my Lord & Savior over the last couple of months. </h1>
 Inspired by the <a href="https://github.com/buffbears/Weatherscan">buffbears/Weatherscan</a> Project. This project was made by me.
  <h1 align="center">This is the Intellistar project!</h1>
  <h1>A big credit to our contributors:</h1>
